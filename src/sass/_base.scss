@@ -1,0 +1,48 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    color: $black;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.785;
+    letter-spacing: 0.04em;
+}
+
+.container {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mq(mobile) {
+     width: 480px;
+    }
+
+    @include mq(tablet) {
+        width: 768px;
+
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    @include mq(desktop) {
+        width: 1280px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
