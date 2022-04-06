@@ -1,0 +1,169 @@
+// .hero_header_wrapper{
+//     background-color: $light_pink;
+// }
+.header {
+  background-color: $light_pink;
+}
+.header__top {
+  display: flex;
+  margin-left: 46px;
+}
+.header__nav-menu {
+  display: flex;
+  margin-left: 110px;
+}
+.header__nav-item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.header__button {
+  color: $accent;
+  background-color: $white;
+  border-radius: 25px;
+  margin-top: 38px;
+  margin-left: 110px;
+  font-weight: 700;
+  width: 159px;
+  line-height: 44px;
+  padding: 0px;
+}
+.header__logo {
+  margin-top: 37px;
+}
+.header__nav {
+  margin-top: 50px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  color: $white;
+  z-index: 5;
+}
+.hero__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 38px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 43px;
+}
+.hero__title-accent {
+  color: $accent;
+}
+.hero__title-container {
+  width: 277px;
+  margin-top: 84px;
+}
+.hero__title-button-products {
+  width: 104px;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: $white;
+  color: $accent;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.hero__title-button-how {
+  width: 138px;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: $white;
+  color: $accent;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.hero__title-buttons-container {
+  margin-top: 25px;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 115px;
+}
+.hero__side {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content:"";
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/desktop/heroheader/Ellipse1.png");
+        position: absolute;
+        z-index: -1;
+        right: -17px;
+        top: -4px;
+    }
+}
+.hero__side-number {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 46px;
+  color: $accent;
+  line-height: 52px;
+}
+.hero__side-text {
+  font-family: $primary-font;
+  color: $white;
+}
+.hero__side-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 78px;
+}
+.hero__circle-image{
+position: absolute;
+top: 56px;
+left: 493px;
+z-index: 3;
+}
+.hero__icecream-image{
+    position: absolute;
+    z-index: 4;
+    top: 107px;
+    left: 603px;
+
+}
+.hero{
+    position: relative;
+}
+.header__bottom-container{
+    display: flex;
+    margin-left: 77px;
+    margin-top: 56px;
+    align-items: flex-end;
+    padding-bottom: 60px;
+}
+.header__bottom-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    width: 200px;
+    color: $white;
+}
+.header_bottle{
+width: 188px;
+height: 191px;
+}
+.header__arrow-right{
+width: 26px;
+height: 26px;
+}
+
+.header__bottom{
+    display: flex;
+
+}
+.header__girl-img{
+    position: absolute;
+    left: 900px;
+    top: 432px;
+    z-index: 4;
+}
