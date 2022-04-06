@@ -60,3 +60,11 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
+
+
+@mixin card ($num) {
+
+    &:nth-child(#{$num})::before {
+        @content
+    }
+}
