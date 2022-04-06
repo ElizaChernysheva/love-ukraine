@@ -1,0 +1,64 @@
+.section-about{
+    padding-top: 125px;
+    padding-bottom: 39px;
+
+    background-color:$bg ;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    
+
+
+    // Размер  до 767px 
+    @media (max-width: 767px) {
+        background-image:  url("../images/mobile/About/milkmobile.png");
+ 
+         // Размер  от 1280px retina
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+       
+               background-image:  url("../images/mobile/About/milkmobile@2x.png");
+         }
+       }
+
+  
+
+    // Размер  от 1280px 
+    @media (min-width: 1280px) {
+         background-image:  url("../images/desktop/About/milk.png");
+  
+          // Размер  от 1280px retina
+          @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+        
+                background-image:  url("../images/desktop/About/milk@2x.png");
+          }
+        }
+
+    
+
+    @include mq(tablet-only){
+        padding-top: 130px;
+        padding-bottom: 66px;
+    }
+
+}
+
+.section-about .title{
+    margin-bottom: 26px;
+
+    @include mq(tablet-only) {
+        margin-bottom: 50px;
+    }
+    
+    @include mq(desktop) {
+        margin-bottom: 55px;
+    }
+
+}
