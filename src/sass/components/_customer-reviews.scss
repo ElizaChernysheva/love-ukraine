@@ -1,3 +1,14 @@
+.reviews {
+    padding-bottom: 86px;
+
+    @include mq(tablet-only) {
+        padding-bottom: 119px;
+    }
+    @include mq(desktop){
+     padding-bottom: 132px
+       
+    }
+}
 .slider {
     margin-left: auto;
     margin-right: auto;
@@ -144,4 +155,15 @@
         @include mq(desktop) {
             font-size: 20px;
         }
+}
+.slick-dots {
+    position: relative;   
+}
+.slick-dots li button:before {
+    font-size: 12px;
+}
+.slick-dots li.slick-active button:before {
+ background-image: url(//svgshare.com/i/g1o.svg);
+ color: transparent;
+ background-repeat: no-repeat;
 }
