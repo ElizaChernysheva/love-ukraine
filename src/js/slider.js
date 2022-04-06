@@ -1,4 +1,5 @@
 $('.slider').slick({
-    infinity: true,
-    autoplay: true,
+  infinity: true,
+  dots: true,
+    mobileFirst: true,
 });
