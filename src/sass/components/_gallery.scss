@@ -1,0 +1,10 @@
+// Временно поставила размеры конейнера для проверки градиента
+.gallery__container {
+    height: 430px;
+    background-image: linear-gradient(to bottom,
+        $bg 0,
+        $bg 38%,
+        $white 38%);
+    padding: 0;
+}
+
