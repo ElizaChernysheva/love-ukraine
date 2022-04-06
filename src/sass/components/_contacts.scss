@@ -1,9 +1,16 @@
 .contacts-section{
     background-color: $bg;
+    // align-items: center;
 
+    padding-bottom: 113px;
 
+    @include mq(tablet) {
+        padding-bottom: 158px;
+    }
 
     @include mq(desktop) {
+        padding-bottom: 165px;
+
         background-repeat: no-repeat;
         background-position: center;
 
@@ -13,6 +20,22 @@
         background-image: url('../images/desktop/Contacts/splashes@2x.png');
     }
   }
+}
+
+.contacts-container {
+    @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
 }
 
 .contacts-list {
@@ -236,4 +259,83 @@
     @include mq(desktop) {
         font-size: 1.83;
     }
+}
+
+.container__buttons {
+    font-family: $primary-font;
+    @include mq(mobile-only) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 54px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        margin-top: 81px;
+    }
+    
+    @include mq(desktop) {
+        margin-top: 86px;
+    }
+
+}
+
+.container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    width: 161px;
+        
+    @include font-contact(700, 16px, 1.31, 0);
+        
+    color: $accent;
+    background-color: $white;
+}
+
+.container__button--start {
+    color: $white;
+    background-color: $btn_activ-dm;
+
+    @include mq(mobile-only) {
+        display: flex;
+        align-items: center;justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 14px;
+        width: 192px;
+    }
+
+    @include mq(desktop) {
+        width: 198px;
+    }
+}
+
+.container__button--end {
+    @include mq(tablet) {
+        width: 174px;
+    }
+
+    @include mq(desktop) {
+        width: 180px;
+    }
+
+    &:hover {
+        background-color: $btn_activ-lm;
+        transition: $animation-delay $animation-function;
+    }
+}
+
+.container__icon {
+    display: flex;
+    margin-left: 10px;
 }
