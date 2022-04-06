@@ -1,10 +1,26 @@
 // Временно поставила размеры конейнера для проверки градиента
-.gallery__container {
-    height: 430px;
+.gallery {
     background-image: linear-gradient(to bottom,
         $bg 0,
-        $bg 38%,
-        $white 38%);
+        $bg 40%,
+        $white 40%);
     padding: 0;
 }
+.gallery__container {
+    padding: 0;
+    text-align: -webkit-center;
+}
+.gallery__imagebox {
+    width: 100%;
+ }
 
+.gallery__image { 
+    height: 122px;
+     width: auto;  
+    @include mq(tablet) {
+        height: 264px;
+    }
+    @include mq(desktop) {
+        height: 430px;
+    }
+ }
