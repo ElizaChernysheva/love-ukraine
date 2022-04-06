@@ -6,11 +6,8 @@
     
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-
+    background-position: 0px 720px;
     
-
-
     // Размер  до 767px 
     @media (max-width: 767px) {
         background-image:  url("../images/mobile/About/milkmobile.png");
@@ -25,10 +22,9 @@
          }
        }
 
-  
-
     // Размер  от 1280px 
     @media (min-width: 1280px) {
+        background-position: center;
          background-image:  url("../images/desktop/About/milk.png");
   
           // Размер  от 1280px retina
@@ -40,8 +36,7 @@
                 background-image:  url("../images/desktop/About/milk@2x.png");
           }
         }
-
-    
+   
 
     @include mq(tablet-only){
         padding-top: 130px;
@@ -62,3 +57,85 @@
     }
 
 }
+.about{
+    @include mq(tablet){
+        display: flex;
+    }
+}
+
+
+.about_discription{
+    margin-top: 45px;
+    @include mq(tablet-only){
+        width: 340px;
+        margin-left: 17px;
+    }
+    @include mq(desktop){
+        width: 463px;
+        margin-left: 74px;
+    }
+}
+
+
+.about_discription-title{
+    margin-bottom: 35px;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $black;
+
+    @include mq(tablet-only){
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @include mq(desktop){
+        font-size: 16px;
+        line-height: 1.76;
+    }
+
+}
+
+.about_discription-list{
+    margin-bottom: 25px;
+    @include mq(tablet-only){
+        margin-bottom: 62px;
+    }
+    @include mq(desktop){
+        margin-bottom: 45px;
+    }
+}
+
+.about_discription-item:not(:last-child){
+    margin-bottom: 20px;
+
+    @include mq(tablet-only){
+        margin-bottom: 25px;
+    }
+    @include mq(desktop){
+        margin-bottom: 44px;
+    }
+}
+
+.about_discription-text{
+    font-size: 12px;
+    line-height: 1.62;
+    color: $third;
+
+    @include mq(tablet-only){
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @include mq(desktop){
+        font-size: 16px;
+        line-height: 1.94;
+    }
+}
+
+// Кнопка
+.about_discription .btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+}
+
