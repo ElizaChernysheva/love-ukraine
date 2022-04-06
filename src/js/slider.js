@@ -1,1 +1,1 @@
-$('.single-item').slick();
+$('.slider').slick();
