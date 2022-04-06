@@ -9,27 +9,42 @@
             justify-content: space-between;
             margin-bottom: 91px;
         }
+
+        @include mq(desktop) {
+            margin-bottom: 97px;
+        }
     }
 
     .container:last-child {
         padding-top: 22px;
         padding-bottom: 25px;
+
+        @include mq(tablet) {
+            padding-top: 29px;
+            padding-bottom: 18px;
+        }
+
+        @include mq(desktop) {
+            padding-top: 9px;
+            padding-bottom: 10px;
+        }
     }
 }
    
 .footer__heading {
-    max-width: 79%;
+    font-weight: 400;
+    max-width: 220px;
     width: 100%;
     margin-bottom: 43px;
 
     text-align: left;
 
     @include mq(tablet){
-        max-width: 45%;
+        max-width: 325px;
     }
 
     @include mq(desktop){
-        max-width: 41%;
+        max-width: 474px;
     }
 }
 
@@ -38,6 +53,14 @@
     margin-top: 17px;
 
     text-align: left;
+
+    @include mq(tablet){
+        margin-top: 16px;
+    }
+
+    @include mq(desktop){
+        margin-top: 15px;
+    }
 }
 
 .socials-list {
@@ -46,6 +69,10 @@
     justify-content: flex-end;
 
     margin-bottom: 46px;
+
+    @include mq(desktop){
+        margin-bottom: 50px;
+    }
 }
 
 .socials-list__item {
@@ -55,9 +82,14 @@
     width: 32px;
     height: 32px;
 
-    background-color: $second;
+    background-color:rgb(254, 165, 187);
     border-radius: 50%;
-    transition: background-color;
+    transition: background-color $animation-delay $animation-function;
+
+    @include mq(tablet){
+        width: 34px;
+        height: 34px;
+    }
 
     &:hover,
     &:focus {
@@ -66,6 +98,13 @@
 
     &:not(:last-child) {
         margin-right: 28px;
+        @include mq(tablet){
+            margin-right: 30px;
+        }
+    
+        @include mq(desktop){
+            margin-right: 24px;
+        }
     }
 }
 
@@ -89,6 +128,13 @@
     line-height: 1.86;
     text-align: right;
 
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+
     &__tel {
         color: $accent;
     }
@@ -99,7 +145,7 @@
     width: 100%;
     height: 1px;
 
-    background-color: rgba(225, 225, 225, 1);
+    background-color: rgb(225, 225, 225);
 }
 
 
@@ -114,4 +160,10 @@
     line-height: 1.52;
     text-align: center;
     color: $third;
+
+    @include mq(tablet) {
+        max-width:287px;
+
+        line-height: 1.86;
+    }
 }
