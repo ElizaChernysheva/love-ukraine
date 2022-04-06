@@ -2,10 +2,11 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
- @import './mixins';
- @import './colors';
- @import './base';
- @import './normalize';
+@import './mixins';
+@import './colors';
+@import './base';
+@import './normalize';
+@import './commonStyles';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
