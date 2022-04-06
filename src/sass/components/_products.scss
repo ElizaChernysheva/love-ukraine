@@ -1,0 +1,133 @@
+.section-products {
+
+    padding-top: 121px;
+    padding-bottom: 98px;
+
+    @include mq (tablet-only) {
+        padding-bottom: 112px;
+    }
+
+    @include mq (desktop) {
+        padding-top: 127px;
+        padding-bottom: 119px;
+    }
+
+    & .title {
+        @include mq (mobile-only) {
+            margin-bottom: 30px;
+        }
+
+        @include mq (tablet-only) {
+            margin-bottom: 40px;
+        }
+
+        @include mq (desktop) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mq (mobile-only) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    gap: 20px;
+
+    @include mq (desktop) {
+        gap: 30px;
+    }
+
+
+    color: $white;
+
+    &__card {
+        flex-grow: 1;
+        text-align: center;
+
+        min-height: 485px;
+        border-radius: 24px;
+
+        @include mq (desktop) {
+            min-height: 525px;
+        }
+
+        padding-left: 39px;
+        padding-right: 39px;
+
+        @include mq (tablet-only) {
+            padding-left: 11px;
+            padding-right: 11px;
+        }
+
+        @include mq (desktop) {
+            padding-left: 44px;
+            padding-right: 44px;
+        }
+
+
+        background-color: $light_pink;
+
+        &:nth-child(2n) {
+            background-color: $light_green;
+        }
+
+        :nth-child(3n) {
+            background-color: $creme;
+        }
+    }
+
+    &__title {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        text-transform: uppercase;
+
+        @include mq (desktop) {
+            font-size: 30px;
+            line-height: 1.13
+        }
+    }
+
+    &__description {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.76;
+
+        padding-bottom: 40px;
+
+        @include mq (desktop) {
+            font-size: 16px;
+            padding-bottom: 62px;
+        }
+
+        @include mq (mobile-only) {
+            line-height: 1.52;
+            padding-bottom: 30px;
+
+        }
+
+        &::before {
+            margin-bottom: 30px;
+
+            @include mq (desktop) {
+                margin-bottom: 32px;
+            }
+
+            content: "";
+            width: 6px;
+            height: 6px;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+
+    // &::before {
+    //     position: absolute;
+
+    // }
+}
