@@ -1,1 +1,4 @@
-$('.single-item').slick();
+$('.slider').slick({
+    infinity: true,
+    autoplay: true,
+});
