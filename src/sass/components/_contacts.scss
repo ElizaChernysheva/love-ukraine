@@ -1,0 +1,239 @@
+.contacts-section{
+    background-color: $bg;
+
+
+
+    @include mq(desktop) {
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-image: url('../images/desktop/Contacts/splashes.png');
+
+    @include mq(retina) {
+        background-image: url('../images/desktop/Contacts/splashes@2x.png');
+    }
+  }
+}
+
+.contacts-list {
+    padding: 0 50px;
+
+    @include mq(tablet) {
+        display: flex;
+        margin-right: -20px;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        margin-right: -31px;
+    }
+}
+
+.contacts-list__item {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+    padding-right: 21px;
+    margin: 0;
+    width: 220px;
+
+    background-color: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @include mq(mobile-only) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: column;
+        flex-basis: calc((100% / 3) - 20px);
+        
+        margin-right: 20px;
+        margin-bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }
+
+    @include mq(desktop) {
+        flex-basis: calc((100% / 3) - 31px);
+                
+        margin-right: 31px;
+        padding-top: 51px;
+        padding-bottom: 62px;
+        padding-left: 43px;
+        padding-right: 44px;
+        width: 330px;
+    }
+}
+
+.contacts-list__category {
+    margin-bottom: 25px;
+    text-align: center;
+    width: 80px;
+
+    @include font-contact(500, 12px, 1.86, 0.04em);
+
+    border-radius: 4px;
+    color: $white;
+    background-color: $creme;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+        width: 73px;
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+    
+}
+
+.contacts-list__category--width {
+    background-color: $light_green;
+    width: 130px;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+        width: 138px;
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-list__wrapper::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 179px;
+    height: 1px;
+
+    background-color: $ellipce;
+    transform: rotate(0);
+
+    @include mq(tablet) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 157px;
+        height: 1px;
+    }
+    
+    @include mq(desktop) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
+
+.contacts-list__schedule--bottom {
+    margin-bottom: 10px;
+}
+
+.contacts-list__name {
+    margin-bottom: 10px;
+    @include font-contact(500, 12px, 1.86, 0.04em);
+
+    color: $black;
+
+    @include mq(tablet) {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+.contacts-list__text {
+    @include font-contact(500, 12px, 1.5, 0);
+
+    color: $third;
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__timetable::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 179px;
+    height: 1px;
+
+    background-color: $ellipce;
+    transform: rotate(0);
+
+    @include mq(tablet) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 157px;
+        height: 1px;
+    }
+    
+    @include mq(desktop) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
+
+.contacts-list__day {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+    
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__time {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    color: $light_pink;
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+    
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__link {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    color: $third;
+
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.83;
+    }
+    
+    @include mq(desktop) {
+        font-size: 1.83;
+    }
+}
