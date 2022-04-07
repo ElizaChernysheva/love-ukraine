@@ -63,6 +63,7 @@
     display: block;
     width: 33px;
     height: 50px;
+    margin-bottom: 16px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -71,12 +72,14 @@
         background-image: url('../images/mobile/advantages/icon1@2x.png');
     }
     @include mq(tablet) {
+        margin-bottom: 36px;
         background-image: url('../images/tablet/advantages/icon1.png');
         @include mq(retina) {
             background-image: url('../images/tablet/advantages/icon1@2x.png');
         }
     }
     @include mq(desktop) {
+        margin-bottom: 40px;
         background-image: url('../images/desktop/advantages/icon1.png');
     
         @include mq(retina) {
@@ -89,6 +92,7 @@
     display: block;
     width: 50px;
     height: 50px;
+    margin-bottom: 16px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -97,12 +101,14 @@
         background-image: url('../images/mobile/advantages/icon2@2x.png');
     }
     @include mq(tablet) {
+        margin-bottom: 36px;
         background-image: url('../images/tablet/advantages/icon2.png');
         @include mq(retina) {
             background-image: url('../images/tablet/advantages/icon2@2x.png');
         }
     }
     @include mq(desktop) {
+        margin-bottom: 40px;
         background-image: url('../images/desktop/advantages/icon2.png');
         @include mq(retina) {
             background-image: url('../images/desktop/advantages/icon2@2x.png');
@@ -114,7 +120,7 @@
     display: block;
     width: 44px;
     height: 50px;
-    
+    margin-bottom: 16px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -123,12 +129,14 @@
         background-image: url('../images/mobile/advantages/icon3@2x.png');
     }
     @include mq(tablet) {
+        margin-bottom: 36px;
         background-image: url('../images/tablet/advantages/icon3.png');
         @include mq(retina) {
             background-image: url('../images/tablet/advantages/icon3@2x.png');
         }
     }
     @include mq(desktop) {
+        margin-bottom: 40px;
         background-image: url('../images/desktop/advantages/icon3.png');
         @include mq(retina) {
             background-image: url('../images/desktop/advantages/icon3@2x.png');
