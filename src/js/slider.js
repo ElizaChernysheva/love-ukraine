@@ -1,5 +1,6 @@
 $('.slider').slick({
   infinity: true,
   dots: true,
-    mobileFirst: true,
+  mobileFirst: true,
+  arrows: false,
 });
