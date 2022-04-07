@@ -41,73 +41,104 @@
         gap: 30px;
     }
 
-
     color: $white;
 
     &__card {
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
+
+        align-items: center;
         text-align: center;
 
         min-height: 485px;
         border-radius: 24px;
 
-        @include mq (desktop) {
-            min-height: 525px;
-        }
-
-        padding-left: 39px;
-        padding-right: 39px;
+        margin-top: 115px;
 
         @include mq (tablet-only) {
-            padding-left: 11px;
-            padding-right: 11px;
+            margin-top: 105px;
         }
 
         @include mq (desktop) {
-            padding-left: 44px;
-            padding-right: 44px;
+            margin-top: 210px;
+            min-height: 525px;
+
         }
 
 
         background-color: $light_pink;
 
         &:nth-child(2n) {
-            background-color: $light_green;
+            background-color: $creme;
         }
 
-        :nth-child(3n) {
-            background-color: $creme;
+        &:nth-child(3n) {
+            background-color: $light_green;
         }
     }
 
     &__title {
+        margin-top: 22px;
         font-family: $secondary-font;
         font-weight: 400;
         font-size: 20px;
         line-height: 1.15;
         text-transform: uppercase;
 
+        @include mq (tablet-only) {
+            margin-top: 30px;
+        }
+
         @include mq (desktop) {
+            margin-top: 38px;
             font-size: 30px;
             line-height: 1.13
         }
+
+        &::after {
+            content: "";
+            width: 26px;
+            height: 6px;
+
+            margin-left: -13px;
+            position: relative;
+            display: block;
+
+            left: 50%;
+            right: 50%;
+            background-image: url(../images/svg/dots.svg);
+            background-repeat: no-repeat;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+
+            @include mq (desktop) {
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+        }
     }
+
+
 
     &__description {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.76;
 
-        padding-bottom: 40px;
+
+        margin-bottom: 40px;
 
         @include mq (desktop) {
             font-size: 16px;
-            padding-bottom: 62px;
+            margin-bottom: 62px;
         }
 
         @include mq (mobile-only) {
             line-height: 1.52;
-            padding-bottom: 30px;
+            margin-bottom: 30px;
 
         }
 
@@ -118,16 +149,177 @@
                 margin-bottom: 32px;
             }
 
-            content: "";
-            width: 6px;
-            height: 6px;
-            border: none;
-            border-radius: 50%;
+            background-image: url(../images/desktop/Products/arrow-right.png);
+
+
         }
     }
 
-    // &::before {
-    //     position: absolute;
+    &__btn {
+        display: block;
+        text-align: center;
+        width: 52px;
+        height: 40px;
+        background-color: inherit;
+        cursor: pointer;
 
-    // }
+        margin-bottom: 40px;
+
+        @include mq (desktop) {
+            margin-bottom: 50px;
+        }
+
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -115px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include mq (tablet-only) {
+        margin-top: -105px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    @include mq (desktop) {
+        margin-top: -210px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+}
+
+.product-list__card::before {
+    position: relative;
+    top: -115px;
+
+    display: block;
+    content: "";
+    width: 249px;
+    height: 252px;
+
+    @include mq (tablet-only) {
+        top: -105px;
+        width: 220px;
+        height: 224px;
+
+    }
+
+    @include mq (desktop) {
+        top: -210px;
+        width: 330px;
+        height: 335px;
+    }
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+// 
+.product-list__card {
+    @include card (1) {
+        background-image: url(../images/mobile/Products/product1mobile.png);
+
+        @include mq(retina) {
+            background-image: url(../images/mobile/Products/product1mobile@2x.png);
+
+        }
+
+    }
+
+    @include card (2) {
+        background-image: url(../images/mobile/Products/product2mobile.png);
+
+        @include mq(retina) {
+            background-image: url(../images/mobile/Products/product2mobile@2x.png);
+
+        }
+    }
+
+    @include card (3) {
+        background-image: url(../images/mobile/Products/product3mobile.png);
+
+        @include mq(retina) {
+            background-image: url(../images/mobile/Products/product3mobile@2x.png);
+
+        }
+    }
+}
+
+// Tablet vertion
+.product-list__card {
+
+    @include card (1) {
+        @include mq (tablet-only) {
+            background-image: url(../images/tablet/Products/product1tablet.png);
+
+            @include mq(retina) {
+                background-image: url(../images/tablet/Products/product1tablet@2x.png);
+
+            }
+        }
+    }
+
+    @include card (2) {
+        @include mq (tablet-only) {
+            background-image: url(../images/tablet/Products/product2tablet.png);
+
+            @include mq(retina) {
+                background-image: url(../images/tablet/Products/product2tablet@2x.png);
+
+            }
+        }
+    }
+
+    @include card (3) {
+        @include mq (tablet-only) {
+            background-image: url(../images/tablet/Products/product3tablet.png);
+
+            @include mq(retina) {
+                background-image: url(../images/tablet/Products/product3tablet@2x.png);
+
+            }
+        }
+    }
+}
+
+// Desctop vertion
+.product-list__card {
+
+    @include card (1) {
+        @include mq (tablet-only) {
+            background-image: url(../images/desktop/Products/product1.png);
+
+            @include mq(retina) {
+                background-image: url(../images/desktop/Products/product1@2x.png);
+
+            }
+        }
+    }
+
+    @include card (2) {
+        @include mq (tablet-only) {
+            background-image: url(../images/desktop/Products/product2.png);
+
+            @include mq(retina) {
+                background-image: url(../images/desktop/Products/product2@2x.png);
+
+            }
+        }
+    }
+
+    @include card (3) {
+        @include mq (tablet-only) {
+            background-image: url(../images/desktop/Products/product3.png);
+
+            @include mq(retina) {
+                background-image: url(../images/desktop/Products/product3@2x.png);
+
+            }
+        }
+    }
 }
