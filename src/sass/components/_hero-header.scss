@@ -3,36 +3,48 @@
 // }
 .header {
   background-color: $light_pink;
+  position: relative;
 }
 .header__top {
   display: flex;
+  padding-top: 37px;
 }
 .header__nav-menu {
   display: flex;
   margin-left: 110px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 .header__nav-item {
-  margin-right: 20px;
+  margin-right: 35px;
   &:last-child {
     margin-right: 0px;
+  }
+  &:hover{
+    a{
+    color: $accent;
+    }
   }
 }
 .header__button {
   color: $accent;
   background-color: $white;
   border-radius: 25px;
-  margin-top: 38px;
   margin-left: 110px;
   font-weight: 700;
   width: 159px;
   line-height: 44px;
   padding: 0px;
 }
-.header__logo {
-  margin-top: 37px;
+.header__common-button:hover{
+background-color: $btn_activ-dm;
+color: $white; svg{
+    fill: $white !important; 
 }
+}
+
 .header__nav {
-  margin-top: 50px;
   font-family: $primary-font;
   font-weight: 700;
   font-size: 16px;
@@ -116,20 +128,29 @@
     display: flex;
     flex-direction: column;
     margin-top: 78px;
-    margin-right: 50px;
+    margin-right: 81px;
+}
+.header__arrow-right{
+  margin-top: 20px;
 }
 .hero__circle-image{
 position: absolute;
-top: 56px;
-left: 678px;
+top: 53px;
+left: 478px;
 z-index: 3;
 }
 .hero__icecream-image{
     position: absolute;
     z-index: 4;
     top: 107px;
-    left: 784px;
+    left: 591px;
 
+}
+.header__girl-img{
+  position: absolute;
+  left: 905px;
+  top: 432px;
+  z-index: 4;
 }
 .hero{
     position: relative;
@@ -139,13 +160,16 @@ z-index: 3;
     margin-top: 56px;
     align-items: flex-end;
     padding-bottom: 60px;
+    margin-left: 43px;
 }
 .header__bottom-text-container{
     display: flex;
     flex-direction: column;
     height: 124px;
-    width: 200px;
     color: $white;
+    width: 201px;
+    margin-left: 30px;
+    line-height: 20px;
 }
 .header_bottle{
 width: 188px;
@@ -160,9 +184,9 @@ height: 26px;
     display: flex;
 
 }
-.header__girl-img{
-    position: absolute;
-    left: 1092px;
-    top: 432px;
-    z-index: 4;
+.header__container{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 34px;
 }

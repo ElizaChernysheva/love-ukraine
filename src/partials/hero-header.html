@@ -1,4 +1,4 @@
-<header class="header container">
+<header class="header header__container">
   <div class="header__wrapper">
     <div class="header__top">
       <a class="header__logo" href="">
@@ -23,7 +23,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__button" type="button">
+      <button class="header__common-button header__button" type="button" data-modal-open>
         <span>Buy now</span>
         <svg class="icon-arrow" width="8" height="8">
           <use href="images/svg/icons.svg#icon-arrow"></use>
@@ -31,47 +31,67 @@
       </button>
     </div>
     <div class="hero>">
-    <div class="hero__container">
-      <div class="hero__title-container">
-        <h1 class="hero__title">
-          ice cream made with <span class="hero__title-accent">passion</span>
-        </h1>
-        <div class="hero__title-buttons-container">
-          <button class="hero__title-button-products" type="button">Products</button>
-          <button class="hero__title-button-how" type="button">How it's made?</button>
+      <div class="hero__container">
+        <div class="hero__title-container">
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title-accent">passion</span>
+          </h1>
+          <div class="hero__title-buttons-container">
+            <a href="#products"><button class="header__common-button hero__title-button-products" type="button">Products</button></a>
+            <a href="#about" ><button class="header__common-button hero__title-button-how" type="button">How it's made?</button></a>
+          </div>
+        </div>
+        <div class="hero__side-container">
+          <div class="hero__side">
+            <p class="hero__side-number">16</p>
+            <p class="hero__side-text">cafes</p>
+            <!-- вставить кружочек как псевдоэлемент ::after -->
+          </div>
+          <div class="hero__side">
+            <p class="hero__side-number">23</p>
+            <p class="hero__side-text">food trucks</p>
+            <!--вставить кружочек как псевдоэлемент ::after-->
+          </div>
         </div>
       </div>
-      <div class="hero__side-container">
-        <div class="hero__side">
-          <p class="hero__side-number">16</p>
-          <p class="hero__side-text">cafes</p>
-          <!-- вставить кружочек как псевдоэлемент ::after -->
-        </div>
-        <div class="hero__side">
-          <p class="hero__side-number">23</p>
-          <p class="hero__side-text">food trucks</p>
-          <!--вставить кружочек как псевдоэлемент ::after-->
-        </div>
-      </div>
+      <!--________________________________________________________-->
+      <img
+        class="hero__circle-image"
+        src="images/desktop/hero-header/circlepink.png"
+        alt="circle"
+      />
+      <img
+        class="hero__icecream-image"
+        src="images/desktop/hero-header/icecream.png"
+        alt="icecream"
+      />
+      <!-- 2 img сверху будут вставляться с помощью position:absolute-->
     </div>
-    <!--________________________________________________________-->
-    <img class="hero__circle-image" src="images/desktop/hero-header/circlepink.png" alt="circle" />
-    <img class="hero__icecream-image" src="images/desktop/hero-header/icecream.png" alt="icecream" />
-    <!-- 2 img сверху будут вставляться с помощью position:absolute-->
-  </div>
-  <!-- <div class="header__bottom"> -->
+    <!-- <div class="header__bottom"> -->
     <div class="header__bottom-container">
-      <img class="header__bottle" src="images/desktop/hero-header/bottle.png" alt="bottle of milk" />
+      <img
+        class="header__bottle"
+        src="images/desktop/hero-header/bottle.png"
+        alt="bottle of milk"
+      />
       <div class="header__bottom-text-container">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
         <a href="">
-        <img class="header__arrow-right" src="images/desktop/hero-header/arrow-right.png" alt="arrow-right" />
-      </a>
+          <img
+            class="header__arrow-right"
+            src="images/desktop/hero-header/arrow-right.png"
+            alt="arrow-right"
+          />
+        </a>
       </div>
     </div>
   </div>
-  <img class="header__girl-img" src="images/desktop/hero-header/girl.png" alt="girl with ice cream" />
+  <img
+    class="header__girl-img"
+    src="images/desktop/hero-header/girl.png"
+    alt="girl with ice cream"
+  />
 </header>
