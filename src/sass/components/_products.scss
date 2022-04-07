@@ -149,7 +149,7 @@
                 margin-bottom: 32px;
             }
 
-            background-image: url(../images/desktop/Products/arrow-right.png);
+            background-image: url(../images/desktop/products/arrow-right.png);
 
 
         }
@@ -222,29 +222,29 @@
 // 
 .product-list__card {
     @include card (1) {
-        background-image: url(../images/mobile/Products/product1mobile.png);
+        background-image: url(../images/mobile/products/product1.png);
 
         @include mq(retina) {
-            background-image: url(../images/mobile/Products/product1mobile@2x.png);
+            background-image: url(../images/mobile/products/product1@2x.png);
 
         }
 
     }
 
     @include card (2) {
-        background-image: url(../images/mobile/Products/product2mobile.png);
+        background-image: url(../images/mobile/products/product2.png);
 
         @include mq(retina) {
-            background-image: url(../images/mobile/Products/product2mobile@2x.png);
+            background-image: url(../images/mobile/products/product2@2x.png);
 
         }
     }
 
     @include card (3) {
-        background-image: url(../images/mobile/Products/product3mobile.png);
+        background-image: url(../images/mobile/products/product3.png);
 
         @include mq(retina) {
-            background-image: url(../images/mobile/Products/product3mobile@2x.png);
+            background-image: url(../images/mobile/products/product3@2x.png);
 
         }
     }
@@ -255,10 +255,10 @@
 
     @include card (1) {
         @include mq (tablet-only) {
-            background-image: url(../images/tablet/Products/product1tablet.png);
+            background-image: url(../images/tablet/products/product1.png);
 
             @include mq(retina) {
-                background-image: url(../images/tablet/Products/product1tablet@2x.png);
+                background-image: url(../images/tablet/products/product1@2x.png);
 
             }
         }
@@ -266,10 +266,10 @@
 
     @include card (2) {
         @include mq (tablet-only) {
-            background-image: url(../images/tablet/Products/product2tablet.png);
+            background-image: url(../images/tablet/products/product2.png);
 
             @include mq(retina) {
-                background-image: url(../images/tablet/Products/product2tablet@2x.png);
+                background-image: url(../images/tablet/products/product2@2x.png);
 
             }
         }
@@ -277,10 +277,10 @@
 
     @include card (3) {
         @include mq (tablet-only) {
-            background-image: url(../images/tablet/Products/product3tablet.png);
+            background-image: url(../images/tablet/products/product3.png);
 
             @include mq(retina) {
-                background-image: url(../images/tablet/Products/product3tablet@2x.png);
+                background-image: url(../images/tablet/products/product3@2x.png);
 
             }
         }
@@ -292,10 +292,10 @@
 
     @include card (1) {
         @include mq (tablet-only) {
-            background-image: url(../images/desktop/Products/product1.png);
+            background-image: url(../images/desktop/products/product1.png);
 
             @include mq(retina) {
-                background-image: url(../images/desktop/Products/product1@2x.png);
+                background-image: url(../images/desktop/products/product1@2x.png);
 
             }
         }
@@ -303,10 +303,10 @@
 
     @include card (2) {
         @include mq (tablet-only) {
-            background-image: url(../images/desktop/Products/product2.png);
+            background-image: url(../images/desktop/products/product2.png);
 
             @include mq(retina) {
-                background-image: url(../images/desktop/Products/product2@2x.png);
+                background-image: url(../images/desktop/products/product2@2x.png);
 
             }
         }
@@ -314,10 +314,10 @@
 
     @include card (3) {
         @include mq (tablet-only) {
-            background-image: url(../images/desktop/Products/product3.png);
+            background-image: url(../images/desktop/products/product3.png);
 
             @include mq(retina) {
-                background-image: url(../images/desktop/Products/product3@2x.png);
+                background-image: url(../images/desktop/products/product3@2x.png);
 
             }
         }

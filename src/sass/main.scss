@@ -5,10 +5,14 @@
 @import './variables/fonts';
 @import './variables/colors';
 @import './variables/animation';
-@import './mixins';
-@import './base';
-@import './normalize';
-@import './commonStyles';
+@import './utilits/mixins';
+
+@import './base/base';
+@import './base/common-styles';
+@import './base/container';
+@import './base/btn';
+
+
 @import './components/hero-header';
 @import './components/products';
 @import './components/about';

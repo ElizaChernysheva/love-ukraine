@@ -1,0 +1,39 @@
+.title {
+  color: $accent;
+
+  font-family: $secondary-font;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+  }
+}
+
+.label {
+  margin-bottom: 15px;
+  color: $second;
+
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mq(tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
