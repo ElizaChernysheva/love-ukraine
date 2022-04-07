@@ -183,9 +183,13 @@
 }
 .slick-dots li button:before {
     font-size: 12px;
+    line-height: 1.9;
 }
 .slick-dots li.slick-active button:before {
- background-image: url(//svgshare.com/i/g1o.svg);
+//  background-image: url(//svgshare.com/i/g1o.svg);
+ background-image: url(../images/svg/house.svg);
+ background-size: 12px;
+ background-position: 50% 50%;
  color: transparent;
  background-repeat: no-repeat;
 }
