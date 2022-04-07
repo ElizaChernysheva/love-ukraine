@@ -3,4 +3,5 @@ $('.slider').slick({
   dots: true,
   mobileFirst: true,
   arrows: false,
+  adaptiveHeight: true,
 });
