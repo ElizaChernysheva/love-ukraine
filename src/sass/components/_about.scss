@@ -10,7 +10,7 @@
     
     // Размер  до 767px 
     @media (max-width: 767px) {
-        background-image:  url("../images/mobile/About/milkmobile.png");
+        background-image:  url("../images/mobile/about/milk.png");
  
          // Размер  от 1280px retina
          @media (min-device-pixel-ratio: 2),
@@ -18,14 +18,14 @@
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
        
-               background-image:  url("../images/mobile/About/milkmobile@2x.png");
+               background-image:  url("../images/mobile/about/milk@2x.png");
          }
        }
 
     // Размер  от 1280px 
     @media (min-width: 1280px) {
         background-position: 0px 370px;
-         background-image:  url("../images/desktop/About/milk.png");
+         background-image:  url("../images/desktop/about/milk.png");
   
           // Размер  от 1280px retina
           @media (min-device-pixel-ratio: 2),
@@ -33,7 +33,7 @@
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
         
-                background-image:  url("../images/desktop/About/milk@2x.png");
+                background-image:  url("../images/desktop/about/milk@2x.png");
           }
         }
    
