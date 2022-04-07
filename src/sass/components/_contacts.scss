@@ -118,7 +118,7 @@
 }
 
 .contacts-list__category--width {
-    background-color: $light_green;
+    background-color: $light-green;
     width: 130px;
 
     @include mq(tablet) {
@@ -247,7 +247,7 @@
 .contacts-list__time {
     @include font-contact(500, 12px, 1.86, 0);
 
-    color: $light_pink;
+    color: $light-pink;
 
     @include mq(tablet) {
         font-size: 14px;
@@ -311,7 +311,7 @@
 
 .container__button--start {
     color: $white;
-    background-color: $btn_activ-dm;
+    background-color: $btn-activ-dm;
 
     @include mq(mobile-only) {
         display: flex;
@@ -347,7 +347,7 @@
     }
 
     &:hover {
-        background-color: $btn_activ-lm;
+        background-color: $btn-activ-lm;
         transition: $animation-delay $animation-function;
     }
 }

@@ -1,8 +1,8 @@
 // .hero_header_wrapper{
-//     background-color: $light_pink;
+//     background-color: $light-pink;
 // }
 .header {
-  background-color: $light_pink;
+  background-color: $light-pink;
   position: relative;
 }
 .header__top {
@@ -38,7 +38,7 @@
   padding: 0px;
 }
 .header__common-button:hover{
-background-color: $btn_activ-dm;
+background-color: $btn-activ-dm;
 color: $white; svg{
     fill: $white !important; 
 }
