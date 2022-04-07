@@ -1,8 +1,8 @@
 // .hero_header_wrapper{
-//     background-color: $light_pink;
+//     background-color: $light-pink;
 // }
 .header {
-  background-color: $light_pink;
+  background-color: $light-pink;
   position: relative;
 }
 .header__top {
@@ -21,12 +21,19 @@
   &:last-child {
     margin-right: 0px;
   }
-  &:hover{
-    a{
-    color: $accent;
-    }
-  }
+  // &:hover{
+  //   a{
+  //   color: $accent;
+  //   }
+  // }
 }
+.header__nav-item>a{
+ transition: color $animation-delay $animation-function;
+}
+.header__nav-item>a:hover,:focus{
+  color: $accent;
+}
+
 .header__button {
   color: $accent;
   background-color: $white;
@@ -37,12 +44,19 @@
   line-height: 44px;
   padding: 0px;
 }
-.header__common-button:hover{
-background-color: $btn_activ-dm;
-color: $white; svg{
-    fill: $white !important; 
+.header__common-button{
+ transition: background-color $animation-delay $animation-function, color $animation-delay $animation-function;
+ &:hover,
+ &:focus{
+ background-color: $btn_activ-dm;
+color: $white; 
 }
 }
+// .header__common-button {
+// background-color: $btn_activ-dm;
+// color: $white; 
+// }
+
 
 .header__nav {
   font-family: $primary-font;
@@ -189,4 +203,27 @@ height: 26px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 34px;
+}
+.header__arrow-right-container{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.header__arrow-svg{
+  fill: $accent;
+  background-color: $white;
+  border-radius: 15px;
+}
+.header__arrow-svg-container{
+border-radius: 15px;
+width: 24px;
+height: 24px;
+&:hover,
+&:focus,
+&:active:hover{
+  svg{
+  fill: $white;
+  background-color: $accent;
+  }
+}
 }
