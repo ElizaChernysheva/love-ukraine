@@ -19,6 +19,8 @@
   <circle cx="16" cy="2" r="2" fill="#C7133E"/>
   <circle cx="2" cy="2" r="2" fill="#C7133E"/>
   <circle cx="30" cy="2" r="2" fill="#C7133E"/>
+<symbol id="icon-arrow" viewBox="0 0 19 32">
+<path stroke="#d41443" style="stroke: var(--color1, #d41443); fill:none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
 </symbol>
 </defs>
 </svg>
