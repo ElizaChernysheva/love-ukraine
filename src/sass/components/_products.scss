@@ -29,7 +29,6 @@
 
 .product-list {
     display: grid;
-    flex-grow: 1;
     grid-template-columns: repeat(3, 1fr);
 
     @include mq (mobile-only) {
@@ -42,7 +41,6 @@
         gap: 30px;
     }
 
-
     color: $white;
 
     &__card {
@@ -50,6 +48,7 @@
         flex-direction: column;
         flex-grow: 1;
 
+        align-items: center;
         text-align: center;
 
         min-height: 485px;
@@ -95,6 +94,30 @@
             margin-top: 38px;
             font-size: 30px;
             line-height: 1.13
+        }
+
+        &::after {
+            content: "";
+            width: 26px;
+            height: 6px;
+
+            margin-left: -13px;
+            position: relative;
+            display: block;
+
+            left: 50%;
+            right: 50%;
+            background-image: url(../images/svg/dots.svg);
+            background-repeat: no-repeat;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+
+            @include mq (desktop) {
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
         }
     }
 
@@ -173,11 +196,6 @@
 .product-list__card::before {
     position: relative;
     top: -115px;
-    right: auto;
-    left: auto;
-
-    margin-left: auto;
-    margin-right: auto;
 
     display: block;
     content: "";
@@ -201,7 +219,7 @@
     background-size: contain;
 }
 
-
+// 
 .product-list__card {
     @include card (1) {
         background-image: url(../images/mobile/Products/product1mobile.png);
@@ -303,29 +321,5 @@
 
             }
         }
-    }
-}
-
-.product-list__title::after {
-    content: "";
-    width: 26px;
-    height: 6px;
-
-    margin-left: -13px;
-    position: relative;
-    display: flex;
-
-    left: 50%;
-    right: 50%;
-    background-image: url(../images/svg/dots.svg);
-    background-repeat: no-repeat;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-
-    @include mq (desktop) {
-        margin-top: 32px;
-        margin-bottom: 32px;
     }
 }

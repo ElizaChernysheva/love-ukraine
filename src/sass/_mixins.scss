@@ -61,7 +61,7 @@
     letter-spacing: $ls;
 }
 
-
+// Mixin for Product grid
 @mixin card ($num) {
 
     &:nth-child(#{$num})::before {
