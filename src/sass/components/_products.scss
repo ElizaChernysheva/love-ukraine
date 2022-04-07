@@ -67,14 +67,14 @@
         }
 
 
-        background-color: $light_pink;
+        background-color: $light-pink;
 
         &:nth-child(2n) {
             background-color: $creme;
         }
 
         &:nth-child(3n) {
-            background-color: $light_green;
+            background-color: $light-green;
         }
     }
 
