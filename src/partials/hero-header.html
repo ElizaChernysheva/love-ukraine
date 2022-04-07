@@ -37,8 +37,8 @@
             ice cream made with <span class="hero__title-accent">passion</span>
           </h1>
           <div class="hero__title-buttons-container">
-            <a href="#products"><button class="header__common-button hero__title-button-products" type="button">Products</button></a>
-            <a href="#about" ><button class="header__common-button hero__title-button-how" type="button">How it's made?</button></a>
+            <a tabindex="-1" href="#products"><button class="header__common-button hero__title-button-products" type="button">Products</button></a>
+            <a tabindex="-1" href="#about" ><button class="header__common-button hero__title-button-how" type="button">How it's made?</button></a>
           </div>
         </div>
         <div class="hero__side-container">
@@ -79,12 +79,15 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <a href="">
-          <img
+        <a class="header__arrow-svg-container"  href="">
+          <svg class="header__arrow-svg" width="24" height="24">
+            <use href="images/svg/icons.svg#icon-arrow-right"></use>
+            </svg>
+          <!-- <img
             class="header__arrow-right"
             src="images/desktop/hero-header/arrow-right.png"
             alt="arrow-right"
-          />
+          /> -->
         </a>
       </div>
     </div>
