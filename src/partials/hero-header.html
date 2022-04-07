@@ -1,76 +1,77 @@
-<header>
-    <div>
-      <a href="">
-        <img
-          src="images/desktop/HeroHeader/logo.png"
-          alt="logo"
-        />
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__top">
+      <a class="header__logo" href="">
+        <img src="images/desktop/HeroHeader/logo.png" alt="logo" />
       </a>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About us</a>
-        </li>
-        <li>
-          <a href="">How it’s made?</a>
-        </li>
-        <li>
-          <a href="">Our products</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-      <button type="button">Buy now ></button>
+      <nav class="header__nav">
+        <ul class="header__nav-menu">
+          <li class="header__nav-item">
+            <a href="">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">About us</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">How it’s made?</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Our products</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button" type="button">
+        <span>Buy now</span>
+        <svg class="icon-arrow" width="8" height="8">
+          <use href="images/svg/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
     </div>
-    <div>
-      <div>
-        <h1>ice cream made with <span>passion</span></h1>
-        <button type="button">Products</button>
-        <button type="button">How it's made?</button>
+    <div class="hero>">
+    <div class="hero__container">
+      <div class="hero__title-container">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title-accent">passion</span>
+        </h1>
+        <div class="hero__title-buttons-container">
+          <button class="hero__title-button-products" type="button">Products</button>
+          <button class="hero__title-button-how" type="button">How it's made?</button>
+        </div>
       </div>
-      <div>
-        <p>16</p>
-        <p>cafes</p>
-        <!-- вставить кружочек как псевдоэлемент ::after -->
-      </div>
-      <div>
-        <p>23</p>
-        <p>food trucks</p>
-        <!--вставить кружочек как псевдоэлемент ::after-->
+      <div class="hero__side-container">
+        <div class="hero__side">
+          <p class="hero__side-number">16</p>
+          <p class="hero__side-text">cafes</p>
+          <!-- вставить кружочек как псевдоэлемент ::after -->
+        </div>
+        <div class="hero__side">
+          <p class="hero__side-number">23</p>
+          <p class="hero__side-text">food trucks</p>
+          <!--вставить кружочек как псевдоэлемент ::after-->
+        </div>
       </div>
     </div>
     <!--________________________________________________________-->
-    <img
-      src="images/desktop/HeroHeader/circlepink.png"
-      alt="circle"
-    />
-    <img
-      src="images/desktop/HeroHeader/icecream.png"
-      alt=""
-    />
+    <img class="hero__circle-image" src="images/desktop/HeroHeader/circlepink.png" alt="circle" />
+    <img class="hero__icecream-image" src="images/desktop/HeroHeader/icecream.png" alt="icecream" />
     <!-- 2 img сверху будут вставляться с помощью position:absolute-->
-    <div>
-
-      <img
-        src="images/desktop/HeroHeader/bottle.png"
-        alt="bottle of milk"
-      />
-      <div>
+  </div>
+  <!-- <div class="header__bottom"> -->
+    <div class="header__bottom-container">
+      <img class="header__bottle" src="images/desktop/HeroHeader/bottle.png" alt="bottle of milk" />
+      <div class="header__bottom-text-container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
         </p>
-        <img
-          src="images/desktop/HeroHeader/arrow-right.png"
-          alt="arrow-right"
-        />
+        <a href="">
+        <img class="header__arrow-right" src="images/desktop/HeroHeader/arrow-right.png" alt="arrow-right" />
+      </a>
       </div>
     </div>
-    <img
-      src="images/desktop/HeroHeader/girl.png"
-      alt="girl with ice cream"
-    />
-  </header>
+  </div>
+  <img class="header__girl-img" src="images/desktop/HeroHeader/girl.png" alt="girl with ice cream" />
+</header>

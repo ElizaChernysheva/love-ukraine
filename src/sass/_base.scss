@@ -30,7 +30,7 @@ body {
     padding-right: 20px;
 
     @include mq(mobile) {
-        width: 320px;
+     width: 480px;
     }
 
     @include mq(tablet) {
