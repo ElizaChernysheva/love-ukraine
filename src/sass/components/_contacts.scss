@@ -1,15 +1,19 @@
 .section-contacts{
 
     padding-bottom: 57px;
-    background: linear-gradient(to bottom, $white 10%, $bg 10%);
+    background: linear-gradient(to bottom, $white 6%, $bg 6%);
 
     @include mq(tablet) {
         padding-bottom: 79px;
+        background: linear-gradient(to bottom, $white 11%, $bg 11%);
     }
 
     @include mq(desktop) {
+
+        // background-color: black;
         padding-bottom: 83px;
 
+    // background: linear-gradient(to bottom, $white 50%, black 50%);
         background-repeat: no-repeat;
         background-position: center;
 
@@ -19,6 +23,10 @@
         background-image: url('../images/desktop/contacts/splashes@2x.png');
     }
   }
+
+    @include mq(desktop) {
+    background: linear-gradient(to bottom, $white 14%, $bg 14%);
+    }   
 }
 
 .contacts-container {
@@ -133,36 +141,39 @@
 }
 
 .contacts-list__wrapper {
-    border-bottom: 1px solid $ellipce;
-    padding-bottom: 25px;
-
+    margin-bottom: 25px;
+    
+    @include mq(tablet) {
+        margin-bottom: 30px;
+    }
+    
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
 }
 
-// .contacts-list__wrapper::after {
-//     content: "";
-//     display: block;
-//     margin-top: 25px;
-//     margin-bottom: 25px;
-//     width: 179px;
-//     height: 1px;
+.contacts-list__wrapper::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 179px;
+    height: 1px;
 
-//     background-color: $ellipce;
-//     transform: rotate(0);
+    background-color: $ellipce;
+    transform: rotate(0);
 
-//     @include mq(tablet) {
-//         margin-top: 30px;
-//         margin-bottom: 30px;
-//         width: 157px;
-//         height: 1px;
-//     }
+    @include mq(tablet) {
+        margin-top: 30px;
+        width: 157px;
+        height: 1px;
+    }
     
-//     @include mq(desktop) {
-//         margin-top: 32px;
-//         margin-bottom: 32px;
-//         width: 234px;
-//         height: 1px;
-//     }
-// }
+    @include mq(desktop) {
+        margin-top: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
 
 .contacts-list__schedule--bottom {
     margin-bottom: 10px;
@@ -200,37 +211,39 @@
 }
 
 .contacts-list__timetable {
-    border-bottom: 1px solid $ellipce;
-    padding-bottom: 25px;
-    margin-top: 25px;
     margin-bottom: 25px;
+    
+    @include mq(tablet) {
+        margin-bottom: 30px;
+    }
+    
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
 }
 
-// .contacts-list__timetable::after {
-//     content: "";
-//     display: block;
-//     margin-top: 25px;
-//     margin-bottom: 25px;
-//     width: 179px;
-//     height: 1px;
+.contacts-list__timetable::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 179px;
+    height: 1px;
 
-//     background-color: $ellipce;
-//     transform: rotate(0);
+    background-color: $ellipce;
+    transform: rotate(0);
 
-//     @include mq(tablet) {
-//         margin-top: 30px;
-//         margin-bottom: 30px;
-//         width: 157px;
-//         height: 1px;
-//     }
+    @include mq(tablet) {
+        margin-top: 30px;
+        width: 157px;
+        height: 1px;
+    }
     
-//     @include mq(desktop) {
-//         margin-top: 32px;
-//         margin-bottom: 32px;
-//         width: 234px;
-//         height: 1px;
-//     }
-// }
+    @include mq(desktop) {
+        margin-top: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
 
 .contacts-list__day {
     @include font-contact(500, 12px, 1.86, 0);
@@ -291,6 +304,7 @@
     
     @include mq(desktop) {
         margin-top: 86px;
+        align-items: center;
     }
 
 }
@@ -315,7 +329,8 @@
 
     @include mq(mobile-only) {
         display: flex;
-        align-items: center;justify-content: center;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 10px;
     }
 
@@ -332,7 +347,7 @@
     }
 
     &:hover {
-        background-color: $btn_activ-dm;
+        background-color: $accent;
         transition: $animation-delay $animation-function;
     }
 }
@@ -354,6 +369,7 @@
 
 .container__icon {
     display: flex; 
+     
+        align-items: center;
     margin-left: 10px;
-    fill: white;
 }
