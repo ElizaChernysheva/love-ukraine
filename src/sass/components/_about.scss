@@ -63,6 +63,18 @@
     }
 }
 
+.about_icon{
+    @include mq(tablet-only){
+        width: 340px;
+        height: 339px;
+    }
+    @include mq(desktop){
+        width: 516px;
+        height: 516px;
+    }
+
+}
+
 
 .about_discription{
     margin-top: 45px;
