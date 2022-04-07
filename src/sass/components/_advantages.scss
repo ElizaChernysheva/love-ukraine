@@ -1,14 +1,18 @@
 .advantages {
     background-color: $bg;
-}
-.advantages__container {
-    padding-bottom: 97px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
     @include mq(tablet) {
-        padding-bottom: 140px;
+        padding-top: 30px;
+        padding-bottom: 70px;
     }
     @include mq(desktop) {
-        padding-bottom: 143px;
+        padding-top: 20px;
     }
+}
+.advantages__container {
+    
 }
 .advantages__list {
     @include mq(tablet) {
@@ -16,19 +20,15 @@
     }
 }
 .advantages__item {
-    position: relative;
     width: 230px;
-    height: 156px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     @include mq(tablet) {
         width: 180px;
-        height: 226px;
     }
     @include mq(desktop) {
         width: 330px;
-        height: 222px;
     }
 }
 .advantages__item:not(:last-child) {
@@ -48,21 +48,19 @@
     color: $accent;
     margin-bottom: 14px;
     font-family: $secondary-font;
-    @include font-contact($fw: 400, $fz: 36px, $lh: 1.14, $ls: 4%);
+    @include font-contact($fw: 400, $fz: 36px, $lh: 1.14, $ls: 0.04em);
     
     @include mq(tablet) {
-        @include font-contact($fw: 400, $fz: 48px, $lh: 1.15, $ls: 4%);
+        @include font-contact($fw: 400, $fz: 48px, $lh: 1.15, $ls: 0.04em);
     }
     
     @include mq(desktop) {
-        @include font-contact($fw: 400, $fz: 58px, $lh: 1.14, $ls: 4%);
+        @include font-contact($fw: 400, $fz: 58px, $lh: 1.14, $ls: 0.04em);
     }
 }
 .advantages__point--first::before {
     content: ' ';
     display: block;
-    position: absolute;
-    top: 0;
     width: 33px;
     height: 50px;
     background-repeat: no-repeat;
@@ -88,11 +86,9 @@
 }
 .advantages__point--second::before {
     content: ' ';
-    position: absolute;
     display: block;
     width: 50px;
     height: 50px;
-    top: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -115,11 +111,10 @@
 }
 .advantages__point--third::before {
     content: ' ';
-    position: absolute;
     display: block;
     width: 44px;
     height: 50px;
-    top: 0;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
