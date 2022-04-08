@@ -1,0 +1,255 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  transition:  background-color $animation-delay $animation-function;
+
+  &--filled {
+  background-color: rgba(255, 184, 202, 0.8);
+  }
+}
+
+
+.header {
+  padding-top: 6px;
+  padding-bottom: 10px;
+
+  @include mq(tablet) {
+    padding-top: 37px;
+    padding-bottom: 30px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+
+// Кнопка мобильного меню
+.menu-button-mobile {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+
+  @include mq(desktop) {
+    display: none;
+  }
+
+  @include mq(tablet-only) {
+    margin-right: 30px;
+  }
+}
+
+.icon-menu {
+  fill: $accent;
+}
+
+.menu-button-mobile .icon-close {
+  display: none;
+}
+
+.menu-button-mobile.is-open .icon-close {
+  display: block;
+  fill: $white;
+}
+
+.menu-button-mobile.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button-mobile.is-open {
+  @media screen and (min-width: 460px) {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 23px;
+    right: -10px;
+  }
+}
+
+.overlay {
+  @include mq(desktop) {
+    margin-left: 74px;
+  }
+}
+
+.overlay.is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-container {
+  @include mq(notDesktop) {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.menu-container.is-open {
+  padding-top: 60px;
+  // padding-left: 20px;
+  width: 250px;
+  height: 100vh;
+  display: block;
+  background-color: $bg-burger;
+}
+
+.header-container .btn-lm {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  // padding-left: 58px;
+  // padding-right: 58px;
+}
+
+// псевдоэлемент в кнопке
+.mobile-btn-buy .icon-arrow {
+  margin-left: 16px;
+
+  @include mq(tablet-only) {
+    margin-left: 14px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 8px;
+  }
+}
+
+// псевдоэлемент в кнопке
+.buy-now .icon-arrow {
+  margin-left: 12px;
+}
+
+.header-container .buy-now {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.header-container .mobile-btn-buy {
+  padding-left: 58px;
+  padding-right: 58px;
+
+  @include mq(tablet-only) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+}
+
+.main-nav {
+  @include mq(desktop) {
+    margin-right: 74px;
+  }
+}
+
+.mobile-btn-buy {
+  display: block;
+  margin: 0 auto 20px;
+
+  @include mq(desktop) {
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-bottom: 0;
+  }
+}
+
+.buy-now {
+  display: none;
+
+  @include mq(tablet-only) {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity 200ms ease-in-out, visibility 300ms ease-in-out;
+
+    &.is-shown {
+      opacity: 1;
+      pointer-events: initial;
+      visibility: visible;
+    }
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-list {
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+
+.nav-list__item {
+  @include mq(notDesktop) {
+    padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #e18298;
+
+    &:first-child {
+      border-top: 1px solid #e18298;
+    }
+  }
+
+  @include mq(tablet-only) {
+    padding-left: 24px;
+  }
+
+  @include mq(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  transition: color $animation-delay $animation-function;
+}
+
+.nav-list__link {
+  margin-left: 0px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: $white;
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
+
+.nav-list__item:hover>a,
+.nav-list__item:focus>a,
+.nav-list__item:active>a {
+  color: $accent;
+
+}

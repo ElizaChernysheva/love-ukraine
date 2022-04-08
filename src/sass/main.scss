@@ -2,6 +2,26 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './variables/fonts';
+@import './variables/colors';
+@import './variables/animation';
+@import './utilits/mixins';
+
+@import './base/base';
+@import './base/common-styles';
+@import './base/container';
+@import './base/btn';
+
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
+
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';

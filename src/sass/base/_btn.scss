@@ -1,0 +1,36 @@
+.btn {
+    &-lm {
+        background-color: $white;
+        color: $accent;
+        transition: background-color $animation-delay $animation-function;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-activ-lm;
+
+        }
+    }
+
+    &-dm {
+        background-color: $accent;
+        color: $white;
+        transition: background-color $animation-delay $animation-function;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-activ-dm;
+
+        }
+    }
+
+    min-height: 44px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    text-align: center;
+
+    border: none;
+    border-radius: 22px;
+
+    cursor: pointer;
+}

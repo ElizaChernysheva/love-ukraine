@@ -1,0 +1,284 @@
+.section-about {
+  padding-top: 125px;
+  padding-bottom: 20px;
+
+  background-color: $bg;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 720px;
+
+  // Размер  до 767px
+  @media (max-width: 767px) {
+    background-image: url('../images/mobile/about/milk.png');
+
+    // Размер  от 1280px retina
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/about/milk@2x.png');
+    }
+  }
+
+  // Размер  от 1280px
+  @media (min-width: 1280px) {
+    background-position: 0px 370px;
+    background-image: url('../images/desktop/about/milk.png');
+
+    // Размер  от 1280px retina
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/about/milk@2x.png');
+    }
+  }
+
+  @include mq(tablet-only) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+  @include mq(desktop) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
+}
+
+.section-about .title {
+  margin-bottom: 26px;
+
+  @include mq(tablet-only) {
+    margin-bottom: 50px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 55px;
+  }
+}
+.about {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
+.about__icon {
+  @include mq(tablet-only) {
+    width: 340px;
+    height: 339px;
+  }
+  @include mq(desktop) {
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.about-discription {
+  margin-top: 45px;
+  @include mq(tablet-only) {
+    width: 340px;
+    margin-left: 17px;
+  }
+  @include mq(desktop) {
+    width: 463px;
+    margin-left: 74px;
+  }
+}
+
+.about-discription__title {
+  margin-bottom: 35px;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $black;
+
+  @include mq(tablet-only) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.about-discription__list {
+  margin-bottom: 25px;
+  @include mq(tablet-only) {
+    margin-bottom: 62px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 45px;
+  }
+}
+
+.about-discription__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @include mq(tablet-only) {
+    margin-bottom: 25px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 44px;
+  }
+}
+
+.about-discription__text {
+  font-size: 12px;
+  line-height: 1.62;
+  color: $third;
+
+  @include mq(tablet-only) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.94;
+  }
+}
+
+// Кнопка
+.about-discription .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+// backdrop
+/* backdrop  фон модального окна*/
+.backdrop-about {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    opacity: 1;
+    z-index: 999;
+    overflow-y: scroll;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .backdrop-about.is-hidden {
+    pointer-events: none;
+    visibility: visible;
+    opacity: 0;
+  
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+  }
+  
+  .backdrop-about.is-hidden .modal-about {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .modal-about {
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+  
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+  
+    width: 85%;
+    
+    // min-height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    background-color: $creme;
+  
+    @media screen and (min-width:400px) {
+        width: 300px;   
+    }
+  
+    
+    @include mq(desktop){
+      width: 528px;
+      
+    }
+  }
+
+.backdrop-about.is-hidden {
+  pointer-events: none;
+  visibility: visible;
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
+.backdrop-about.is-hidden .modal-about {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal-about {
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+
+  width: 85%;
+
+  // min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  background-color: $creme;
+
+  @media screen and (min-width: 400px) {
+    width: 300px;
+  }
+
+  @include mq(desktop) {
+    width: 528px;
+  }
+}
+
+.backdrop-about__icon {
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+}
+
+.backdrop-about__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 4px 6px;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: $creme;
+  }
+}
+
+.modal-about__text {
+  font-family: $primary-font;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.74;
+}

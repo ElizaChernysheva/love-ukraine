@@ -1,0 +1,180 @@
+// Advantages
+.advantages {
+    background-color: $bg;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    @include mq(tablet) {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 20px;
+    }
+}
+
+.advantages-list {
+    @include mq(tablet) {
+        display: flex;
+    }
+
+    &__item {
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        @include mq(tablet) {
+            width: 180px;
+        }
+
+        @include mq(desktop) {
+            width: 330px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        @include mq(mobile-only) {
+            margin-bottom: 38px;
+        }
+
+        @include mq(tablet) {
+            margin-right: 60px;
+        }
+
+        @include mq(desktop) {
+            margin-right: 30px;
+        }
+
+    }
+
+    &__point {
+        color: $accent;
+        margin-bottom: 14px;
+        font-family: $secondary-font;
+        @include font-contact($fw: 400, $fz: 36px, $lh: 1.14, $ls: 0.04em);
+
+        @include mq(tablet) {
+            @include font-contact($fw: 400, $fz: 48px, $lh: 1.15, $ls: 0.04em);
+        }
+
+        @include mq(desktop) {
+            @include font-contact($fw: 400, $fz: 58px, $lh: 1.14, $ls: 0.04em);
+        }
+    }
+
+    &__point--first::before {
+        content: ' ';
+        display: block;
+        width: 33px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/mobile/advantages/icon1.png');
+
+        @include mq(retina) {
+            background-image: url('../images/mobile/advantages/icon1@2x.png');
+        }
+
+        @include mq(tablet) {
+            margin-bottom: 36px;
+            background-image: url('../images/tablet/advantages/icon1.png');
+
+            @include mq(retina) {
+                background-image: url('../images/tablet/advantages/icon1@2x.png');
+            }
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 40px;
+            background-image: url('../images/desktop/advantages/icon1.png');
+
+            @include mq(retina) {
+                background-image: url('../images/desktop/advantages/icon1@2x.png');
+            }
+        }
+    }
+
+    &__point--second::before {
+        content: ' ';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/mobile/advantages/icon2.png');
+
+        @include mq(retina) {
+            background-image: url('../images/mobile/advantages/icon2@2x.png');
+        }
+
+        @include mq(tablet) {
+            margin-bottom: 36px;
+            background-image: url('../images/tablet/advantages/icon2.png');
+
+            @include mq(retina) {
+                background-image: url('../images/tablet/advantages/icon2@2x.png');
+            }
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 40px;
+            background-image: url('../images/desktop/advantages/icon2.png');
+
+            @include mq(retina) {
+                background-image: url('../images/desktop/advantages/icon2@2x.png');
+            }
+        }
+    }
+
+    &__point--third::before {
+        content: ' ';
+        display: block;
+        width: 44px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/mobile/advantages/icon3.png');
+
+        @include mq(retina) {
+            background-image: url('../images/mobile/advantages/icon3@2x.png');
+        }
+
+        @include mq(tablet) {
+            margin-bottom: 36px;
+            background-image: url('../images/tablet/advantages/icon3.png');
+
+            @include mq(retina) {
+                background-image: url('../images/tablet/advantages/icon3@2x.png');
+            }
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 40px;
+            background-image: url('../images/desktop/advantages/icon3.png');
+
+            @include mq(retina) {
+                background-image: url('../images/desktop/advantages/icon3@2x.png');
+            }
+        }
+    }
+
+    &__description {
+        @include font-contact($fw: 700, $fz: 12px, $lh: 1.66, $ls: normal);
+
+        @include mq(tablet) {
+            @include font-contact($fw: 700, $fz: 14px, $lh: 1.71, $ls: normal);
+        }
+
+        @include mq(desktop) {
+            @include font-contact($fw: 700, $fz: 16px, $lh: 1.75, $ls: normal);
+        }
+    }
+}

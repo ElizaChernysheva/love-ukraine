@@ -1,0 +1,363 @@
+.section-contacts {
+
+    padding-bottom: 57px;
+    background: linear-gradient(to bottom, $white 6%, $bg 6%);
+
+    @include mq(tablet) {
+        padding-bottom: 79px;
+        background: linear-gradient(to bottom, $white 11%, $bg 11%);
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 83px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+        background-image: url('../images/desktop/contacts/splashes.png'), linear-gradient(to bottom, $white 14%, $bg 14%);
+
+        @include mq(retina) {
+            background-size: contain;
+            background-image: url('../images/desktop/contacts/splashes@2x.png'), linear-gradient(to bottom, $white 14%, $bg 14%);
+        }
+    }
+}
+
+.contacts-container {
+    @include mq(mobile-only) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contacts-list {
+
+
+    @include mq(tablet) {
+        display: flex;
+        margin-right: -20px;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        margin-right: -31px;
+    }
+}
+
+.contacts-list__item {
+    text-align: left;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+    padding-right: 21px;
+    margin: 0;
+
+
+    background-color: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @include mq(mobile-only) {
+        width: 220px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include mq(tablet) {
+        flex-basis: calc((100% / 3) - 20px);
+
+        margin-right: 20px;
+        margin-bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }
+
+    @include mq(desktop) {
+        flex-basis: calc((100% / 3) - 31px);
+
+        margin-right: 31px;
+        padding-top: 51px;
+        padding-bottom: 62px;
+        padding-left: 43px;
+        padding-right: 44px;
+    }
+}
+
+.contacts-list__category {
+    margin-bottom: 25px;
+    text-align: center;
+    width: 80px;
+
+    @include font-contact(500, 12px, 1.86, 0.04em);
+
+    border-radius: 4px;
+    color: $white;
+    background-color: $creme;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+        width: 73px;
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+
+}
+
+.contacts-list__category--width {
+    background-color: $light-green;
+    width: 130px;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+        width: 138px;
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-list__wrapper {
+    margin-bottom: 25px;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-list__wrapper::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 179px;
+    height: 1px;
+
+    background-color: $ellipce;
+    transform: rotate(0);
+
+    @include mq(tablet) {
+        margin-top: 30px;
+        width: 157px;
+        height: 1px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
+
+.contacts-list__schedule--bottom {
+    margin-bottom: 10px;
+}
+
+.contacts-list__name {
+    margin-bottom: 10px;
+    @include font-contact(500, 12px, 1.86, 0.04em);
+
+    color: $black;
+
+    @include mq(tablet) {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+.contacts-list__text {
+    @include font-contact(500, 12px, 1.5, 0);
+
+    color: $third;
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__timetable {
+    margin-bottom: 25px;
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-list__timetable::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 179px;
+    height: 1px;
+
+    background-color: $ellipce;
+    transform: rotate(0);
+
+    @include mq(tablet) {
+        margin-top: 30px;
+        width: 157px;
+        height: 1px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 32px;
+        width: 234px;
+        height: 1px;
+    }
+}
+
+.contacts-list__day {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__time {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    color: $light-pink;
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+.contacts-list__link {
+    @include font-contact(500, 12px, 1.86, 0);
+
+    color: $third;
+
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.83;
+    }
+
+    @include mq(desktop) {
+        font-size: 1.83;
+    }
+}
+
+.container__buttons {
+    font-family: $primary-font;
+
+    @include mq(mobile-only) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 54px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        margin-top: 81px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 86px;
+        align-items: center;
+    }
+
+}
+
+.container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    width: 161px;
+
+    @include font-contact(700, 16px, 1.31, 0);
+
+
+}
+
+.container__button--start {
+
+
+    @include mq(mobile-only) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 14px;
+        width: 192px;
+    }
+
+    @include mq(desktop) {
+        width: 198px;
+    }
+}
+
+
+
+.container__button--end {
+    @include mq(tablet) {
+        width: 174px;
+    }
+
+    @include mq(desktop) {
+        width: 180px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $btn-activ-lm;
+    }
+}
+
+
+.container__icon {
+    margin-left: 10px;
+}

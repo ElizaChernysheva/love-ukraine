@@ -1,0 +1,47 @@
+// The gallery of products
+.gallery {
+    height: 212px;
+    background-image: linear-gradient(to bottom,
+            $bg 0,
+            $bg 46%,
+            $white 46%);
+    padding: 50px 0 40px 0;
+
+    @include mq(tablet) {
+        padding: 70px 0 60px 0;
+        height: 394px;
+        background-image: linear-gradient(to bottom,
+                $bg 0,
+                $bg 44.5%,
+                $white 44.5%);
+    }
+
+    @include mq(desktop) {
+        height: 560px;
+        background-image: linear-gradient(to bottom,
+                $bg 0,
+                $bg 43%,
+                $white 43%);
+    }
+}
+
+.gallery__container {
+    padding: 0;
+}
+
+.gallery-imagebox {
+    width: 100%;
+}
+
+.gallery-imagebox__image {
+    margin: auto;
+    width: auto;
+
+    @include mq(tablet) {
+        height: 264px;
+    }
+
+    @include mq(desktop) {
+        height: 430px;
+    }
+}

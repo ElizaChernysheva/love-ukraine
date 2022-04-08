@@ -1,0 +1,128 @@
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero__top-wrapper">
+      <div class="hero__title-wrapper">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--accent">passion</span>
+        </h1>
+        <ul class="hero__btn-wrapper">
+          <li>
+            <a class="btn-dm hero__title-btn-prod" href="#products">Products</a>
+          </li>
+          <li>
+            <a class="btn-lm hero__title-btn-how" href="#about">How it's made?</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="stores">
+        <li class="stores__item">
+          <p class="stores__number">16</p>
+          <p class="stores__text">cafes</p>
+        </li>
+        <li class="stores__item">
+          <p class="stores__number">23</p>
+          <p class="stores__text">food trucks</p>
+        </li>
+      </ul>
+      <div></div>
+    </div>
+    <div class="hero__bottom-discription">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button" class="btn-svg-info" aria-label="Button open information">
+        <svg class="arrow-svg" width="12" height="14">
+          <use href="images/svg/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <picture class="icecream">
+      <source
+        srcset="
+          ./images/desktop/hero-header/icecream.png    1x,
+          ./images/desktop/hero-header/icecream@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-header/icecream.png    1x,
+          ./images/tablet/hero-header/icecream@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/mobile/hero-header/icecream.png    1x,
+          ./images/mobile/hero-header/icecream@2x.png 2x
+        "
+        media="(max-width: 767.98px)"
+        type="image/png"
+      />
+      <img
+        class="icecream-image"
+        src="./images/desktop/hero-header/icecream.png"
+        alt="icecream"
+        loading="lazy"
+        width="171"
+        height="410"
+      />
+    </picture>
+
+    <picture class="girl">
+      <source
+        srcset="
+          ./images/desktop/hero-header/girl.png    1x,
+          ./images/desktop/hero-header/girl@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/tablet/hero-header/girl.png 1x, ./images/tablet/hero-header/girl@2x.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <img
+        class="girl-image"
+        src="images/desktop/hero-header/girl.png"
+        alt="circle"
+        loading="lazy"
+        width="168"
+        height="133"
+      />
+    </picture>
+
+    <picture class="bottle">
+      <source
+        srcset="
+          ./images/desktop/hero-header/bottle.png    1x,
+          ./images/desktop/hero-header/bottle@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-header/bottle.png    1x,
+          ./images/tablet/hero-header/bottle@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        class="bottle-image"
+        src="images/desktop/hero-header/bottle.png"
+        alt="circle"
+        loading="lazy"
+        width="124"
+        height="126"
+      />
+    </picture>
+  </div>
+</section>
