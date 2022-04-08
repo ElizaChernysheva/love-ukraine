@@ -11,34 +11,37 @@
         padding: 70px 0 60px 0;
         height: 394px;
         background-image: linear-gradient(to bottom,
-            $bg 0,
-            $bg 44.5%,
-            $white 44.5%);
+                $bg 0,
+                $bg 44.5%,
+                $white 44.5%);
     }
+
     @include mq(desktop) {
         height: 560px;
         background-image: linear-gradient(to bottom,
-            $bg 0,
-            $bg 43%,
-            $white 43%);
+                $bg 0,
+                $bg 43%,
+                $white 43%);
     }
 }
+
 .gallery-container {
-        padding: 0;
-    }
+    padding: 0;
+}
+
 .gallery-imagebox {
-        width: 100%;
-    }
+    width: 100%;
+}
 
 .gallery-imagebox__image {
-        margin: auto;
-        width: auto;
+    margin: auto;
+    width: auto;
 
-        @include mq(tablet) {
-            height: 264px;
-        }
-
-        @include mq(desktop) {
-            height: 430px;
-        }
+    @include mq(tablet) {
+        height: 264px;
     }
+
+    @include mq(desktop) {
+        height: 430px;
+    }
+}
