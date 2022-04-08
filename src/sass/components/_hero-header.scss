@@ -1,6 +1,4 @@
-// .hero_header_wrapper{
-//     background-color: $light-pink;
-// }
+
 .header {
   background-color: $light-pink;
   position: relative;
@@ -21,11 +19,7 @@
   &:last-child {
     margin-right: 0px;
   }
-  // &:hover{
-  //   a{
-  //   color: $accent;
-  //   }
-  // }
+
 }
 .header__nav-item>a{
  transition: color $animation-delay $animation-function;
@@ -43,19 +37,33 @@
   width: 159px;
   line-height: 44px;
   padding: 0px;
+  transition: background-color $animation-delay $animation-function, color $animation-delay $animation-function;
+&:hover,
+&:focus{
+  color: $accent;
+  background-color: rgba(236, 235, 235, 1);
 }
-.header__common-button{
- transition: background-color $animation-delay $animation-function, color $animation-delay $animation-function;
+}
+
+.hero__title-button-products{
+  background-color: $accent;
+  color: $white;
  &:hover,
  &:focus{
- background-color: $btn_activ-dm;
+ background-color: $btn-activ-dm;
 color: $white; 
 }
 }
-// .header__common-button {
-// background-color: $btn_activ-dm;
-// color: $white; 
-// }
+
+.hero__title-button-how{
+  background-color: $white;
+  color: $accent;
+&:hover,
+&:focus{
+color: $accent;
+background-color:rgba(236, 235, 235, 1);
+}
+}
 
 
 .header__nav {
@@ -84,8 +92,6 @@ color: $white;
   width: 104px;
   border-radius: 25px;
   padding: 8px;
-  background-color: $white;
-  color: $accent;
   font-family: $primary-font;
   font-style: normal;
   font-weight: 400;
@@ -95,8 +101,6 @@ color: $white;
   width: 138px;
   border-radius: 25px;
   padding: 8px;
-  background-color: $white;
-  color: $accent;
   font-family: $primary-font;
   font-style: normal;
   font-weight: 400;
