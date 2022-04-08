@@ -3,17 +3,25 @@
     height: 212px;
     background-image: linear-gradient(to bottom,
             $bg 0,
-            $bg 40%,
-            $white 40%);
+            $bg 46%,
+            $white 46%);
     padding: 50px 0 40px 0;
 
     @include mq(tablet) {
         padding: 70px 0 60px 0;
         height: 394px;
+        background-image: linear-gradient(to bottom,
+            $bg 0,
+            $bg 44.5%,
+            $white 44.5%);
     }
 
     @include mq(desktop) {
         height: 560px;
+        background-image: linear-gradient(to bottom,
+            $bg 0,
+            $bg 43%,
+            $white 43%);
     }
 
     &__container {
