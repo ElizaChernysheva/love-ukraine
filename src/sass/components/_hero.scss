@@ -301,18 +301,16 @@
 .icecream {
     position: absolute;
     z-index: 4;
-    top: 108px;
+    bottom: 0;
     left: 45%;
 
     @include mq(mobile-only) {
-        top: 92px;
+        bottom: 0;
         left: 55%;
     }
 
-    @include mq(tablet-only) {
-        top: 75px;
-        // left: 378px;
-    }
+    @include mq(tablet-only) {}
+
 
     & ::before {
         width: 346px;
@@ -321,17 +319,22 @@
         @include mq(tablet-only) {
             width: 324px;
             height: 324px;
+            left: -40%;
+
         }
 
         @include mq(desktop) {
             width: 538px;
             height: 538px;
+            left: -50%;
+            top: -20%;
         }
 
         display: block;
         position: absolute;
         left: -35%;
         top: -5%;
+
 
         content: "";
         border-radius: 50%;
