@@ -1,93 +1,51 @@
-// .hero_header_wrapper{
-//     background-color: $light-pink;
-// }
-.header {
-  background-color: $light-pink;
-  position: relative;
-}
-
-.header__top {
-  display: flex;
-  align-items: center;
-  padding-top: 37px;
-}
-
-.header__nav-menu {
-  display: flex;
-  margin-left: 110px;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-
-.header__nav-item {
-  margin-right: 35px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-
-}
-
-.header__nav-item:hover a,
-.header__nav-item:focus a {
-  transition: color $animation-delay $animation-function;
-  color: $accent;
-  cursor: pointer;
-}
-
-.header__button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.31px;
-
-  margin-left: 110px;
-  width: 159px;
-
-  height: 44px;
-  border-radius: 22px;
-}
-
-.header__nav {
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 16px;
-  color: $white;
-  z-index: 5;
-}
-
-.hero__title {
-  font-family: $secondary-font;
-
-  font-size: 38px;
-  color: $white;
-  text-transform: uppercase;
-  line-height: 1.16;
-}
-
-.hero__title--accent {
-  font-size: 54px;
-  letter-spacing: 0.06em;
-
-  color: $accent;
-}
-
-.hero__title-container {
+.hero__title-wrapper {
   font-weight: 400;
   width: 277px;
   margin-top: 84px;
+  z-index: 15;
+
+
+  @include mq(mobile-only) {
+    width: 218px;
+    margin-top: 193px;
+  }
+
+  @include mq(tablet-only) {
+    width: 162px;
+    margin-top: 15px;
+  }
+}
+
+.hero__title-buttons-container {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.28;
+
+  @include mq(notDesktop) {
+    margin-top: 20px;
+    font-size: 8px;
+    line-height: 1.25;
+    margin-bottom: 160px;
+  }
 }
 
 .hero__title-button-products {
   display: inline-block;
   width: 102px;
+
   min-height: 40px;
   border-radius: 20px;
 
+  @include mq(notDesktop) {
+    width: 61px;
+    min-height: 24px;
+    border-radius: 12px;
+
+    margin-right: 9px;
+  }
+
   margin-right: 15px;
 
-  font-size: 14px;
-  line-height: 1.28;
 }
 
 .hero__title-button-how {
@@ -95,19 +53,16 @@
   min-height: 40px;
   border-radius: 20px;
 
-  font-size: 14px;
-  line-height: 1.28;
+  @include mq(notDesktop) {
+    width: 82px;
+    min-height: 24px;
+    border-radius: 12px;
+
+  }
+
 }
 
-.hero__title-buttons-container {
-  margin-top: 25px;
-}
 
-.hero__container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 70px;
-}
 
 .hero__side {
   display: flex;
@@ -145,6 +100,10 @@
   flex-direction: column;
   margin-top: 78px;
   margin-right: 81px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
 }
 
 .header__arrow-right {
@@ -156,6 +115,11 @@
   top: 52px;
   left: 478px;
   z-index: 3;
+
+  @include mq(mobile-only) {
+    top: 83px;
+    left: 36px;
+  }
 }
 
 .hero__icecream-image {
@@ -164,6 +128,15 @@
   top: 108px;
   left: 591px;
 
+  @include mq(mobile-only) {
+    top: 92px;
+    left: 117px;
+  }
+
+  @include mq(tablet-only) {
+    top: 63px;
+    left: 378px;
+  }
 }
 
 .header__girl-img {
@@ -171,6 +144,10 @@
   left: 905px;
   top: 432px;
   z-index: 4;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
 }
 
 .hero {
@@ -179,10 +156,24 @@
 
 .header__bottom-container {
   display: flex;
-  margin-top: 56px;
   align-items: flex-end;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  margin-top: 56px;
+
+  @include mq(tablet-only) {
+    margin-top: 20px;
+  }
+
   padding-bottom: 45px;
-  margin-left: 43px;
+
+  @include mq(tablet-only) {
+    padding-bottom: 28px;
+  }
+
 }
 
 .header__bottom-text-container {
@@ -208,13 +199,6 @@
 .header__bottom {
   display: flex;
 
-}
-
-.header__container {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 34px;
 }
 
 .header__arrow-right-container {
