@@ -1,5 +1,5 @@
 // The gallery of products
-.gallery {
+.section-gallery {
     height: 212px;
     background-image: linear-gradient(to bottom,
             $bg 0,
@@ -15,7 +15,6 @@
             $bg 44.5%,
             $white 44.5%);
     }
-
     @include mq(desktop) {
         height: 560px;
         background-image: linear-gradient(to bottom,
@@ -23,16 +22,15 @@
             $bg 43%,
             $white 43%);
     }
-
-    &__container {
+}
+.gallery-container {
         padding: 0;
     }
-
-    &__imagebox {
+.gallery-imagebox {
         width: 100%;
     }
 
-    &__image {
+.gallery-imagebox__image {
         margin: auto;
         width: auto;
 
@@ -44,4 +42,3 @@
             height: 430px;
         }
     }
-}
