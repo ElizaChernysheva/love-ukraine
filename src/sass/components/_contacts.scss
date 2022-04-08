@@ -1,4 +1,4 @@
-.contacts{
+.section-contacts{
 
     padding-bottom: 57px;
     background: linear-gradient(to bottom, $white 6%, $bg 6%);
@@ -94,7 +94,6 @@
         padding-bottom: 62px;
         padding-left: 43px;
         padding-right: 44px;
-        // width: 330px;
     }
 }
 
@@ -343,8 +342,8 @@
     }
 
     &:hover {
-        background-color: background-color $accent;
-        transition: 500ms $animation-function;
+        background-color: $accent;
+        transition: background-color 500ms $animation-function;
     }
 }
 
