@@ -341,7 +341,8 @@
         width: 198px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $accent;
         transition: background-color 500ms $animation-function;
     }
@@ -356,7 +357,8 @@
         width: 180px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $btn-activ-lm;
         transition: background-color 500ms $animation-function;
     }
