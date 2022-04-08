@@ -1,4 +1,4 @@
-.section-products {
+.products {
 
     padding-top: 121px;
     padding-bottom: 98px;
@@ -12,19 +12,6 @@
         padding-bottom: 119px;
     }
 
-    & .title {
-        @include mq (mobile-only) {
-            margin-bottom: 30px;
-        }
-
-        @include mq (tablet-only) {
-            margin-bottom: 40px;
-        }
-
-        @include mq (desktop) {
-            margin-bottom: 50px;
-        }
-    }
 }
 
 .product-list {
@@ -172,7 +159,9 @@
 .product-list__card::before {
     position: absolute;
     top: -115px;
-    left: 0;
+    left: 50%;
+
+    transform: translate(-50%);
 
 
     display: block;
