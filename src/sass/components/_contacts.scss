@@ -1,4 +1,4 @@
-.contacts{
+.section-contacts{
 
     padding-bottom: 57px;
     background: linear-gradient(to bottom, $white 6%, $bg 6%);
@@ -344,7 +344,7 @@
 
     &:hover {
         background-color: $accent;
-        transition: 500ms $animation-function;
+        transition: $animation-delay $animation-function;
     }
 }
 
@@ -359,7 +359,7 @@
 
     &:hover {
         background-color: $btn_activ-lm;
-        transition: 500ms $animation-function;
+        transition: $animation-delay $animation-function;
     }
 }
 
