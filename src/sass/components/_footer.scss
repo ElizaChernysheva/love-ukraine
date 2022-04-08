@@ -143,6 +143,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
+    letter-spacing: normal;
     text-align: right;
 
     @include mq(tablet) {
@@ -167,6 +168,7 @@
     font-weight: 700;
     line-height: 1.52;
     text-align: center;
+    letter-spacing: 0.02em;
     color: $third;
 
     @include mq(tablet) {
