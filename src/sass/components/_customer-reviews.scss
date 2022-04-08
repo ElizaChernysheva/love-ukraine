@@ -186,7 +186,8 @@
     line-height: 1.9;
 }
 .slick-dots li.slick-active button:before {
-//  background-image: url(//svgshare.com/i/g1o.svg);
+    
+// fallback background-image: url(//svgshare.com/i/g1o.svg);
  background-image: url(../images/svg/house.svg);
  background-size: 12px;
  background-position: 50% 50%;
