@@ -336,11 +336,6 @@
     @include mq(desktop) {
         width: 198px;
     }
-
-    &:hover,
-    &:focus {
-        background-color: $accent;
-    }
 }
 
 
