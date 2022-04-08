@@ -1,4 +1,4 @@
-.section-contacts{
+.section-contacts {
 
     padding-bottom: 57px;
     background: linear-gradient(to bottom, $white 6%, $bg 6%);
@@ -15,34 +15,34 @@
 
         background-image: url('../images/desktop/contacts/splashes.png');
 
-    @include mq(retina) {
-        background-image: url('../images/desktop/contacts/splashes@2x.png');
+        @include mq(retina) {
+            background-image: url('../images/desktop/contacts/splashes@2x.png');
+        }
     }
-  }
 
     @include mq(desktop) {
-    background: linear-gradient(to bottom, $white 14%, $bg 14%);
-    }   
+        background: linear-gradient(to bottom, $white 14%, $bg 14%);
+    }
 }
 
 .contacts-container {
     @include mq(mobile-only) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     @include mq(tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .contacts-list {
-    padding: 0 50px;
+
 
     @include mq(tablet) {
         display: flex;
@@ -70,6 +70,7 @@
 
     @include mq(mobile-only) {
         width: 220px;
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -77,7 +78,7 @@
 
     @include mq(tablet) {
         flex-basis: calc((100% / 3) - 20px);
-        
+
         margin-right: 20px;
         margin-bottom: 0;
         padding-top: 50px;
@@ -88,7 +89,7 @@
 
     @include mq(desktop) {
         flex-basis: calc((100% / 3) - 31px);
-                
+
         margin-right: 31px;
         padding-top: 51px;
         padding-bottom: 62px;
@@ -117,7 +118,7 @@
     @include mq(desktop) {
         margin-bottom: 32px;
     }
-    
+
 }
 
 .contacts-list__category--width {
@@ -137,11 +138,11 @@
 
 .contacts-list__wrapper {
     margin-bottom: 25px;
-    
+
     @include mq(tablet) {
         margin-bottom: 30px;
     }
-    
+
     @include mq(desktop) {
         margin-bottom: 32px;
     }
@@ -162,7 +163,7 @@
         width: 157px;
         height: 1px;
     }
-    
+
     @include mq(desktop) {
         margin-top: 32px;
         width: 234px;
@@ -207,11 +208,11 @@
 
 .contacts-list__timetable {
     margin-bottom: 25px;
-    
+
     @include mq(tablet) {
         margin-bottom: 30px;
     }
-    
+
     @include mq(desktop) {
         margin-bottom: 32px;
     }
@@ -232,7 +233,7 @@
         width: 157px;
         height: 1px;
     }
-    
+
     @include mq(desktop) {
         margin-top: 32px;
         width: 234px;
@@ -246,7 +247,7 @@
     @include mq(tablet) {
         font-size: 14px;
     }
-    
+
     @include mq(desktop) {
         font-size: 16px;
     }
@@ -260,7 +261,7 @@
     @include mq(tablet) {
         font-size: 14px;
     }
-    
+
     @include mq(desktop) {
         font-size: 16px;
     }
@@ -275,7 +276,7 @@
         font-size: 14px;
         line-height: 1.83;
     }
-    
+
     @include mq(desktop) {
         font-size: 1.83;
     }
@@ -283,6 +284,7 @@
 
 .container__buttons {
     font-family: $primary-font;
+
     @include mq(mobile-only) {
         display: flex;
         align-items: center;
@@ -296,7 +298,7 @@
         align-items: center;
         margin-top: 81px;
     }
-    
+
     @include mq(desktop) {
         margin-top: 86px;
         align-items: center;
@@ -311,16 +313,14 @@
     padding-right: 17px;
     padding-left: 17px;
     width: 161px;
-        
+
     @include font-contact(700, 16px, 1.31, 0);
-        
-    color: $accent;
-    background-color: $white;
+
+
 }
 
-.container__button--start { 
-    color: $white;
-    background-color: $btn-activ-dm;
+.container__button--start {
+
 
     @include mq(mobile-only) {
         display: flex;
@@ -341,10 +341,7 @@
         width: 198px;
     }
 
-    &:hover {
-        background-color: $accent;
-        transition: background-color 500ms $animation-function;
-    }
+
 }
 
 .container__button--end {
@@ -356,10 +353,7 @@
         width: 180px;
     }
 
-    &:hover {
-        background-color: $btn-activ-lm;
-        transition: background-color 500ms $animation-function;
-    }
+
 }
 
 .container__icon {

@@ -2,20 +2,24 @@
     &-lm {
         background-color: $white;
         color: $accent;
+        transition: background-color $animation-delay $animation-function;
 
         &:hover,
         &:focus {
             background-color: $btn-activ-lm;
+
         }
     }
 
     &-dm {
         background-color: $accent;
         color: $white;
+        transition: background-color $animation-delay $animation-function;
 
         &:hover,
         &:focus {
             background-color: $btn-activ-dm;
+
         }
     }
 
