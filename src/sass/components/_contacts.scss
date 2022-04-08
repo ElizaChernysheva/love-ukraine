@@ -13,15 +13,11 @@
         background-repeat: no-repeat;
         background-position: center;
 
-        background-image: url('../images/desktop/contacts/splashes.png');
+        background-image: linear-gradient(to bottom, $white 14%, $bg 14%), url('../images/desktop/contacts/splashes.png');
 
         @include mq(retina) {
-            background-image: url('../images/desktop/contacts/splashes@2x.png');
+            background-image: linear-gradient(to bottom, $white 14%, $bg 14%), url('../images/desktop/contacts/splashes@2x.png');
         }
-    }
-
-    @include mq(desktop) {
-        background: linear-gradient(to bottom, $white 14%, $bg 14%);
     }
 }
 
