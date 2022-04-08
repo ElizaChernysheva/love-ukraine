@@ -1,26 +1,39 @@
-// Временно поставила размеры конейнера для проверки градиента
+// The gallery of products
 .gallery {
+    height: 212px;
     background-image: linear-gradient(to bottom,
-        $bg 0,
-        $bg 40%,
-        $white 40%);
-    padding: 0;
-}
-.gallery__container {
-    padding: 0;
-    text-align: -webkit-center;
-}
-.gallery__imagebox {
-    width: 100%;
- }
+            $bg 0,
+            $bg 40%,
+            $white 40%);
+    padding: 50px 0 40px 0;
 
-.gallery__image { 
-    height: 122px;
-     width: auto;  
     @include mq(tablet) {
-        height: 264px;
+        padding: 70px 0 60px 0;
+        height: 394px;
     }
+
     @include mq(desktop) {
-        height: 430px;
+        height: 560px;
     }
- }
+
+    &__container {
+        padding: 0;
+    }
+
+    &__imagebox {
+        width: 100%;
+    }
+
+    &__image {
+        margin: auto;
+        width: auto;
+
+        @include mq(tablet) {
+            height: 264px;
+        }
+
+        @include mq(desktop) {
+            height: 430px;
+        }
+    }
+}
