@@ -343,7 +343,7 @@
     }
 
     &:hover {
-        background-color: $accent;
+        background-color: background-color $accent;
         transition: 500ms $animation-function;
     }
 }
@@ -359,7 +359,7 @@
 
     &:hover {
         background-color: $btn-activ-lm;
-        transition: 500ms $animation-function;
+        transition: background-color 500ms $animation-function;
     }
 }
 
