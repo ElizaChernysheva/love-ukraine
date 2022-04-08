@@ -90,6 +90,9 @@
 }
 
 .hero__title-btn-prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 102px;
 
     min-height: 40px;
@@ -113,8 +116,9 @@
 }
 
 .hero__title-btn-how {
-
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 138px;
     min-height: 40px;
     border-radius: 20px;
