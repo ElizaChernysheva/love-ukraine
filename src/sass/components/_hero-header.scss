@@ -5,10 +5,13 @@
   background-color: $light-pink;
   position: relative;
 }
+
 .header__top {
   display: flex;
+  align-items: center;
   padding-top: 37px;
 }
+
 .header__nav-menu {
   display: flex;
   margin-left: 110px;
@@ -16,47 +19,34 @@
   height: 100%;
   align-items: center;
 }
+
 .header__nav-item {
   margin-right: 35px;
+
   &:last-child {
     margin-right: 0px;
   }
-  // &:hover{
-  //   a{
-  //   color: $accent;
-  //   }
-  // }
+
 }
-.header__nav-item>a{
- transition: color $animation-delay $animation-function;
-}
-.header__nav-item>a:hover,:focus{
+
+.header__nav-item:hover a,
+.header__nav-item:focus a {
+  transition: color $animation-delay $animation-function;
   color: $accent;
+  cursor: pointer;
 }
 
 .header__button {
-  color: $accent;
-  background-color: $white;
-  border-radius: 25px;
-  margin-left: 110px;
+  font-size: 16px;
   font-weight: 700;
-  width: 159px;
-  line-height: 44px;
-  padding: 0px;
-}
-.header__common-button{
- transition: background-color $animation-delay $animation-function, color $animation-delay $animation-function;
- &:hover,
- &:focus{
- background-color: $btn_activ-dm;
-color: $white; 
-}
-}
-// .header__common-button {
-// background-color: $btn_activ-dm;
-// color: $white; 
-// }
+  line-height: 1.31px;
 
+  margin-left: 110px;
+  width: 159px;
+
+  height: 44px;
+  border-radius: 22px;
+}
 
 .header__nav {
   font-family: $primary-font;
@@ -65,165 +55,191 @@ color: $white;
   color: $white;
   z-index: 5;
 }
+
 .hero__title {
   font-family: $secondary-font;
-  font-weight: 400;
+
   font-size: 38px;
   color: $white;
   text-transform: uppercase;
-  line-height: 43px;
+  line-height: 1.16;
 }
-.hero__title-accent {
+
+.hero__title--accent {
+  font-size: 54px;
+  letter-spacing: 0.06em;
+
   color: $accent;
 }
+
 .hero__title-container {
+  font-weight: 400;
   width: 277px;
   margin-top: 84px;
 }
+
 .hero__title-button-products {
-  width: 104px;
-  border-radius: 25px;
-  padding: 8px;
-  background-color: $white;
-  color: $accent;
-  font-family: $primary-font;
-  font-style: normal;
-  font-weight: 400;
+  display: inline-block;
+  width: 102px;
+  min-height: 40px;
+  border-radius: 20px;
+
+  margin-right: 15px;
+
   font-size: 14px;
+  line-height: 1.28;
 }
+
 .hero__title-button-how {
   width: 138px;
-  border-radius: 25px;
-  padding: 8px;
-  background-color: $white;
-  color: $accent;
-  font-family: $primary-font;
-  font-style: normal;
-  font-weight: 400;
+  min-height: 40px;
+  border-radius: 20px;
+
   font-size: 14px;
+  line-height: 1.28;
 }
+
 .hero__title-buttons-container {
   margin-top: 25px;
 }
+
 .hero__container {
   display: flex;
   justify-content: space-between;
   margin-left: 70px;
 }
+
 .hero__side {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    &::before{
-        content:"";
-        width: 30px;
-        height: 30px;
-        background-image: url("../images/desktop/hero-header/ellipse1.png");
-        position: absolute;
-        z-index: -1;
-        right: -17px;
-        top: -4px;
-    }
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/desktop/hero-header/ellipse1.png");
+    position: absolute;
+    z-index: -1;
+    right: -17px;
+    top: -4px;
+  }
 }
+
 .hero__side-number {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 46px;
   color: $accent;
-  line-height: 52px;
+  line-height: 1.15;
 }
+
 .hero__side-text {
-  font-family: $primary-font;
   color: $white;
 }
+
 .hero__side-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 78px;
-    margin-right: 81px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 78px;
+  margin-right: 81px;
 }
-.header__arrow-right{
+
+.header__arrow-right {
   margin-top: 20px;
 }
-.hero__circle-image{
-position: absolute;
-top: 53px;
-left: 478px;
-z-index: 3;
+
+.hero__circle-image {
+  position: absolute;
+  top: 52px;
+  left: 478px;
+  z-index: 3;
 }
-.hero__icecream-image{
-    position: absolute;
-    z-index: 4;
-    top: 107px;
-    left: 591px;
+
+.hero__icecream-image {
+  position: absolute;
+  z-index: 4;
+  top: 108px;
+  left: 591px;
 
 }
-.header__girl-img{
+
+.header__girl-img {
   position: absolute;
   left: 905px;
   top: 432px;
   z-index: 4;
 }
-.hero{
-    position: relative;
-}
-.header__bottom-container{
-    display: flex;
-    margin-top: 56px;
-    align-items: flex-end;
-    padding-bottom: 60px;
-    margin-left: 43px;
-}
-.header__bottom-text-container{
-    display: flex;
-    flex-direction: column;
-    height: 124px;
-    color: $white;
-    width: 201px;
-    margin-left: 30px;
-    line-height: 20px;
-}
-.header_bottle{
-width: 188px;
-height: 191px;
-}
-.header__arrow-right{
-width: 26px;
-height: 26px;
+
+.hero {
+  position: relative;
 }
 
-.header__bottom{
-    display: flex;
+.header__bottom-container {
+  display: flex;
+  margin-top: 56px;
+  align-items: flex-end;
+  padding-bottom: 45px;
+  margin-left: 43px;
+}
+
+.header__bottom-text-container {
+  display: flex;
+  flex-direction: column;
+  height: 124px;
+  color: $white;
+  width: 201px;
+  margin-left: 30px;
+  line-height: 20px;
+}
+
+.header_bottle {
+  width: 188px;
+  height: 191px;
+}
+
+.header__arrow-right {
+  width: 26px;
+  height: 26px;
+}
+
+.header__bottom {
+  display: flex;
 
 }
-.header__container{
+
+.header__container {
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 34px;
 }
-.header__arrow-right-container{
+
+.header__arrow-right-container {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
-.header__arrow-svg{
+
+.header__arrow-svg {
   fill: $accent;
   background-color: $white;
   border-radius: 15px;
 }
-.header__arrow-svg-container{
-border-radius: 15px;
-width: 24px;
-height: 24px;
-&:hover,
-&:focus,
-&:active:hover{
-  svg{
-  fill: $white;
-  background-color: $accent;
+
+.header__arrow-svg-container {
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+
+  &:hover,
+  &:focus,
+  &:active:hover {
+    svg {
+      fill: $white;
+      background-color: $accent;
+    }
   }
-}
 }
