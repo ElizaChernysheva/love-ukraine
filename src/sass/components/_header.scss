@@ -13,9 +13,11 @@
 
 .header {
   padding-top: 6px;
+  padding-bottom: 10px;
 
   @include mq(tablet) {
     padding-top: 37px;
+    padding-bottom: 30px;
   }
 }
 
