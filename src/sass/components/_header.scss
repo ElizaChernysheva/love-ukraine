@@ -1,5 +1,6 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background-color: rgba(255, 184, 202, 0.6);
 }
 
@@ -15,6 +16,7 @@
   display: flex;
   align-items: center;
 }
+
 
 // Кнопка мобильного меню
 .menu-button-mobile {

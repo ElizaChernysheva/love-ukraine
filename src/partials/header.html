@@ -1,7 +1,22 @@
 <header class="header">
   <div class="header-container container">
     <a class="header__logo" href="">
-      <img src="./images/desktop/hero-header/logo.png" alt="logo" />
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/hero-header/logo.png    1x,
+            ./images/desktop/hero-header/logo@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/desktop/hero-header/logo.png"
+          alt="logo"
+          width="199"
+          height="50"
+          loading="lazy"
+        />
+      </picture>
     </a>
 
     <div class="btn-wrapper">
@@ -18,7 +33,7 @@
         </svg>
       </button>
 
-      <button class="btn btn-lm buy-now is-shown" type="button" data-btn-tablet>
+      <button class="btn btn-lm buy-now is-shown" type="button" data-btn-tablet data-modal-open>
         Buy now
         <svg class="icon-arrow" width="8" height="8">
           <use href="./images/svg/icons.svg#icon-arrow"></use>
@@ -28,7 +43,7 @@
 
     <div class="overlay" data-menu>
       <div class="menu-container" id="menu-container" data-menu>
-        <button class="btn btn-lm mobile-btn-buy" type="button">
+        <button class="btn btn-lm mobile-btn-buy" type="button" data-modal-open >
           Buy now
           <svg class="icon-arrow" width="8" height="8">
             <use href="./images/svg/icons.svg#icon-arrow"></use>
