@@ -1,5 +1,5 @@
 // The gallery of products
-.section-gallery {
+.gallery {
     height: 212px;
     background-image: linear-gradient(to bottom,
             $bg 0,
@@ -25,7 +25,7 @@
     }
 }
 
-.gallery-container {
+.gallery__container {
     padding: 0;
 }
 
