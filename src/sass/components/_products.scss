@@ -140,6 +140,8 @@
         width: 40px;
         height: 40px;
 
+        transition: background-color $animation-delay $animation-function;
+
         &:hover,
         &:focus {
             background-color: $accent;
